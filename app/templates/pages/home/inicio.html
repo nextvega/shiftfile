@@ -1,0 +1,381 @@
+{% extends 'layouts/index.html' %}
+{% load static %}
+
+
+{% block title %} {{title}} {% endblock %}
+
+
+
+{% block content %}
+
+    <section class="welcome__slogan">
+
+        <div class="content">
+            <main class="welcome__slogan__principal">
+                <h1 class="welcome__slogan__principal-title">Interact with PDFs <span>smarter</span>  with AI</h1>
+                <p class="welcome__slogan__principal-description">
+                    Empower PDF workflow with HiPDF's AI magic. Effortlessly chat, summarize, read, convert, edit, and more.
+                    Your PDF tasks, simplified and smarter, at your service.
+                </p>
+            </main>
+        </div>
+
+    </section>
+
+    <section class="popular__tools">
+        <div class="content">
+            <main class="popular__tools__grid">
+                <header class="popular__tools__grid__header">
+                    <div class="popular__tools__grid__header__title">
+                        <h1 class="popular__tools__grid__header__title-text">Popular Tools</h1>
+                    </div>
+
+                    <div class="popular__tools__grid__header__explore">
+                        <a class="popular__tools__grid__header__explore-link" href="#">Explore All Tools <i class="bi bi-chevron-right"></i></a>
+                    </div>
+                </header>
+
+                <div class="popular__tools__grid__body">
+                    <article class="popular__tools__grid__body__tool">
+                        <a href="#" class="popular__tools__grid__body__tool__link">
+                            <picture class="popular__tools__grid__body__tool__link__picture">
+                                <img class="popular__tools__grid__body__tool__link__picture-img" src="{% static 'build/img/read.webp'%}" alt="Compress PDF">
+                            </picture>
+
+                            <div class="popular__tools__grid__body__tool__link__description">
+                                <h3 class="popular__tools__grid__body__tool__link__description-title">AI Read PDF</h3>
+                                <p class="popular__tools__grid__body__tool__link__description-more">Al chatting, summarizing, explaining, rewriting your PDFs.</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="popular__tools__grid__body__tool">
+                        <a href="#" class="popular__tools__grid__body__tool__link">
+                            <picture class="popular__tools__grid__body__tool__link__picture">
+                                <img class="popular__tools__grid__body__tool__link__picture-img" src="{% static 'build/img/detector.webp'%}" alt="AI Detector">
+                            </picture>
+
+                            <div class="popular__tools__grid__body__tool__link__description">
+                                <h3 class="popular__tools__grid__body__tool__link__description-title">AI Detector</h3>
+                                <p class="popular__tools__grid__body__tool__link__description-more">Detect AI-written content with ease.</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="popular__tools__grid__body__tool">
+                        <a href="#" class="popular__tools__grid__body__tool__link">
+                            <picture class="popular__tools__grid__body__tool__link__picture">
+                                <img class="popular__tools__grid__body__tool__link__picture-img" src="{% static 'build/img/compress.svg'%}" alt="Compress PDF">
+                            </picture>
+
+                            <div class="popular__tools__grid__body__tool__link__description">
+                                <h3 class="popular__tools__grid__body__tool__link__description-title">Compress PDF</h3>
+                                <p class="popular__tools__grid__body__tool__link__description-more">The easiest way to reduce PDF size online.</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="popular__tools__grid__body__tool">
+                        <a href="#" class="popular__tools__grid__body__tool__link">
+                            <picture class="popular__tools__grid__body__tool__link__picture">
+                                <img class="popular__tools__grid__body__tool__link__picture-img" src="{% static 'build/img/word.svg'%}" alt="Compress PDF">
+                            </picture>
+
+                            <div class="popular__tools__grid__body__tool__link__description">
+                                <h3 class="popular__tools__grid__body__tool__link__description-title">PDF to Word</h3>
+                                <p class="popular__tools__grid__body__tool__link__description-more">Easily convert PDF to Word online.</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="popular__tools__grid__body__tool">
+                        <a href="#" class="popular__tools__grid__body__tool__link">
+                            <picture class="popular__tools__grid__body__tool__link__picture">
+                                <img class="popular__tools__grid__body__tool__link__picture-img" src="{% static 'build/img/compress.svg'%}" alt="Compress PDF">
+                            </picture>
+
+                            <div class="popular__tools__grid__body__tool__link__description">
+                                <h3 class="popular__tools__grid__body__tool__link__description-title">Compress PDF</h3>
+                                <p class="popular__tools__grid__body__tool__link__description-more">The easiest way to reduce PDF size online.</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="popular__tools__grid__body__tool">
+                        <a href="#" class="popular__tools__grid__body__tool__link">
+                            <picture class="popular__tools__grid__body__tool__link__picture">
+                                <img class="popular__tools__grid__body__tool__link__picture-img" src="{% static 'build/img/pdf.svg'%}" alt="Compress PDF">
+                            </picture>
+
+                            <div class="popular__tools__grid__body__tool__link__description">
+                                <h3 class="popular__tools__grid__body__tool__link__description-title">PDF to PPT</h3>
+                                <p class="popular__tools__grid__body__tool__link__description-more">Convert PDF to Powerpoint online.</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="popular__tools__grid__body__tool">
+                        <a href="#" class="popular__tools__grid__body__tool__link">
+                            <picture class="popular__tools__grid__body__tool__link__picture">
+                                <img class="popular__tools__grid__body__tool__link__picture-img" src="{% static 'build/img/excel.svg'%}" alt="Compress PDF">
+                            </picture>
+
+                            <div class="popular__tools__grid__body__tool__link__description">
+                                <h3 class="popular__tools__grid__body__tool__link__description-title">Excel to PDF</h3>
+                                <p class="popular__tools__grid__body__tool__link__description-more">Easily Convert Excel spreadsheet to PDF.</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="popular__tools__grid__body__tool">
+                        <a href="#" class="popular__tools__grid__body__tool__link">
+                            <picture class="popular__tools__grid__body__tool__link__picture">
+                                <img class="popular__tools__grid__body__tool__link__picture-img" src="{% static 'build/img/image.svg'%}" alt="Compress PDF">
+                            </picture>
+
+                            <div class="popular__tools__grid__body__tool__link__description">
+                                <h3 class="popular__tools__grid__body__tool__link__description-title">Images Converter</h3>
+                                <p class="popular__tools__grid__body__tool__link__description-more">Easily convert between JPG, PNG, GIF, TIFF, BMP and ICO.</p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <section class="featured__tools">
+        <section class="content">
+            <div class="featured__tools__nav">
+                <div class="featured__tools__nav-start">
+                    <p class="featured__tools__nav-start-text">01</p>
+                </div>
+                <div class="featured__tools__nav-line"></div>
+                <div class="featured__tools__nav-finish">
+                    <p class="featured__tools__nav-finish-text">05</p>
+                </div>
+            </div>
+        </section>
+
+
+        <ul class="featured__tools__grid">
+            <li class="featured__tools__grid__item" >
+                <div class="content featured__tools__grid__item__grid">
+                    <article class="featured__tools__grid__item__header">
+                        <h3 class="featured__tools__grid__item__header-title">
+                            <span>Chat</span> with Your PDFs
+                        </h3>
+                        <ul class="featured__tools__grid__item__header__description">
+                            <li class="featured__tools__grid__item__header__description-text">Talk to your papers, reports, and textbooks intelligently with Al, powered by ChatGPT.</li>
+                            <li class="featured__tools__grid__item__header__description-text">Answers provide page links to the original file.</li>
+                            <li class="featured__tools__grid__item__header__description-text">Keep your PDF chat records for easy reference and review.</li>
+                            <li class="featured__tools__grid__item__header__description-text">Use Al prompts to activate PDF tools.</li>
+                        </ul>
+                        <a class="featured__tools__grid__item__header-link" href="#">Chat with PDF Now</a>
+                    </article>
+                    <picture class="featured__tools__grid__item__picture">
+                        <img class="featured__tools__grid__item__picture-img" src="https://www.hipdf.com/hipdf40-v1/assets/swiper-chat-with-pdf.png" alt="Chat with Your PDFs" loading="lazy">
+                    </picture>
+                </div>
+            </li>
+
+            <li class="featured__tools__grid__item" >
+                <div class="content featured__tools__grid__item__grid">
+                    <article class="featured__tools__grid__item__header">
+                        <h3 class="featured__tools__grid__item__header-title">
+                            <span>Crop</span> PDFs with Ease
+                        </h3>
+                        <ul class="featured__tools__grid__item__header__description">
+                            <li class="featured__tools__grid__item__header__description-text">Uniformly adjust PDF page size.</li>
+                            <li class="featured__tools__grid__item__header__description-text">Quickly adjust the margin size.</li>
+                            <li class="featured__tools__grid__item__header__description-text">Support customized cropping of PDF pages.</li>
+                        </ul>
+                        <a class="featured__tools__grid__item__header-link" href="#">Crop PDF Now</a>
+                    </article>
+                    <picture class="featured__tools__grid__item__picture">
+                        <img class="featured__tools__grid__item__picture-img" src="https://www.hipdf.com/hipdf40-v1/assets/swiper-crop-pdf.png" alt="Chat with Your PDFs" loading="lazy">
+                    </picture>
+                </div>
+            </li>
+
+            <li class="featured__tools__grid__item" >
+                <div class="content featured__tools__grid__item__grid">
+                    <article class="featured__tools__grid__item__header">
+                        <h3 class="featured__tools__grid__item__header-title">
+                            <span>Organize</span> PDFs More Efficiently
+                        </h3>
+                        <ul class="featured__tools__grid__item__header__description">
+                            <li class="featured__tools__grid__item__header__description-text">Convert PDFs to Office and convert Office to PDF quickly.</li>
+                            <li class="featured__tools__grid__item__header__description-text">Let you crop, compress, merge, replace text, rotate pages of PDFs, and so on.</li>
+                            <li class="featured__tools__grid__item__header__description-text">Can set passwords and redact PDFs to protect your files.</li>
+                        </ul>
+                        <a class="featured__tools__grid__item__header-link" href="#">Explore All Tools</a>
+                    </article>
+                    <picture class="featured__tools__grid__item__picture">
+                        <img class="featured__tools__grid__item__picture-img" src="https://www.hipdf.com/hipdf40-v1/assets/swiper-more-pdf.png" alt="Chat with Your PDFs" loading="lazy">
+                    </picture>
+                </div>
+            </li>
+
+            <li class="featured__tools__grid__item" >
+                <div class="content featured__tools__grid__item__grid">
+                    <article class="featured__tools__grid__item__header">
+                        <h3 class="featured__tools__grid__item__header-title">
+                            <span>Not only</span> PDF Tasks
+                        </h3>
+                        <ul class="featured__tools__grid__item__header__description">
+                            <li class="featured__tools__grid__item__header__description-text">Let you compress, crop, resize, and rotate images.</li>
+                            <li class="featured__tools__grid__item__header__description-text">Easily convert between JPG, PNG, GIF, TIFF,BMP and ICO.</li>
+                            <li class="featured__tools__grid__item__header__description-text">Can convert images to Word, PPT, TXT, Excel, and RTF format.</li>
+                        </ul>
+                        <a class="featured__tools__grid__item__header-link" href="#">Chat with PDF Now</a>
+                    </article>
+                    <picture class="featured__tools__grid__item__picture">
+                        <img class="featured__tools__grid__item__picture-img" src="https://www.hipdf.com/hipdf40-v1/assets/swiper-popular-tools.png" alt="Chat with Your PDFs" loading="lazy">
+                    </picture>
+                </div>
+            </li>
+
+            <li class="featured__tools__grid__item" >
+                <div class="content featured__tools__grid__item__grid">
+                    <article class="featured__tools__grid__item__header">
+                        <h3 class="featured__tools__grid__item__header-title">
+                            <span>Manage </span> Your Documents in One Place
+                        </h3>
+                        <ul class="featured__tools__grid__item__header__description">
+                            <li class="featured__tools__grid__item__header__description-text">View your PDF files across devices at any time.</li>
+                            <li class="featured__tools__grid__item__header__description-text">Free 10G cloud storage space.</li>
+                            <li class="featured__tools__grid__item__header__description-text">Can create folders and star, rename, move files, and so on</li>
+                        </ul>
+                        <a class="featured__tools__grid__item__header-link" href="#">Start Free Trial</a>
+                    </article>
+                    <picture class="featured__tools__grid__item__picture">
+                        <img class="featured__tools__grid__item__picture-img" src="https://www.hipdf.com/hipdf40-v1/assets/swiper-cloud.png" alt="Chat with Your PDFs" loading="lazy">
+                    </picture>
+                </div>
+            </li>
+        </ul>
+
+    </section>
+    
+    <section class="skills__file">
+        <div class="content">
+            <main class="skills__file__grid">
+
+                <section class="skills__file__grid__header">
+                    <h1 class="skills__file__grid__header-title">Why Choose HiPDF?</h1>
+                </section>
+
+                <section class="skills__file__grid__body">
+                    <article class="skills__file__grid__body__item">
+                        <picture class="skills__file__grid__body__item__picture">
+                            <img class="skills__file__grid__body__item__picture-img" src="{% static 'build/img/pencil.svg' %}" alt="cropper">
+                        </picture>
+
+                        <div class="skills__file__grid__body__item__text">
+                            <h3 class="skills__file__grid__body__item__text-title">Various Editing Tools</h3>
+                            <p class="skills__file__grid__body__item__text-description">
+                                Users can click on Text button to add content. Users can even draw shapes by clicking on the Shapes button and also add images. 
+                                These three things form the building blocks of all PDF documents.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="skills__file__grid__body__item">
+                        <picture class="skills__file__grid__body__item__picture">
+                            <img class="skills__file__grid__body__item__picture-img" src="{% static 'build/img/like.svg' %}" alt="cropper">
+                        </picture>
+
+                        <div class="skills__file__grid__body__item__text">
+                            <h3 class="skills__file__grid__body__item__text-title">Works on All Platforms</h3>
+                            <p class="skills__file__grid__body__item__text-description">
+                                Whether it be Windows, Linux, or Mac OS. Our software works on all of these different operating systems.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="skills__file__grid__body__item">
+                        <picture class="skills__file__grid__body__item__picture">
+                            <img class="skills__file__grid__body__item__picture-img" src="{% static 'build/img/trophy.svg' %}" alt="cropper">
+                        </picture>
+
+                        <div class="skills__file__grid__body__item__text">
+                            <h3 class="skills__file__grid__body__item__text-title">Absolutely Free PDF</h3>
+                            <p class="skills__file__grid__body__item__text-description">
+                                Our PDF editor comes with many prebuild tools and features. 
+                                Like adding Text onto files. All of these features are free for everyone to use. 
+                                There's also no limit on the number of usage as well.
+                            </p>
+                        </div>
+                    </article>
+
+
+                </section>
+
+            </main>
+        </div>
+    </section>
+
+    <section class="banner__tools">
+        <div class="content">
+            <main class="banner__tools__grid">
+                <div class="banner__tools__grid__left">
+                    <a href="" class="banner__tools__grid__left__logo">
+                        <picture class="banner__tools__grid__left__logo__picture">
+                            <img class="banner__tools__grid__left__logo__picture-img" src="{% static 'build/img/icon.svg'%}" alt="">
+                        </picture>
+                        <h1 class="banner__tools__grid__left__logo-title">Shift<span>File</span>.io</h1>
+                    </a>
+
+                    <div class="banner__tools__grid__left__desciption">
+                        <p class="banner__tools__grid__left__desciption-text">Free PDF tools process PDF tasks online.</p>
+
+                        <ul class="banner__tools__grid__left__desciption__list">
+                            <button class="banner__tools__grid__left__desciption__list-button">Get Started</button>
+                            <button class="banner__tools__grid__left__desciption__list-button">Explore All Tools</button>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="banner__tools__grid__right">
+                    <picture class="banner__tools__grid__right__picture">
+                        <img class="banner__tools__grid__right__picture-img" src="https://images.hipdf.com/images2022/product-img/compress-pdf/brand-img.png" alt="process">
+                    </picture>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <section class="rating__tools">
+        <div class="content">
+            <main class="rating__tools__grid">
+                <div class="rating__tools__grid__star">
+                    <h3 class="rating__tools__grid__star-text">HiPDF Online Tools quality rating: </h3>
+                    <picture class="rating__tools__grid__star__picture">
+                        <img class="rating__tools__grid__star__picture-img" src="{% static 'build/img/star.svg' %}" alt="rating">
+
+                        <h3 class="rating__tools__grid__star__picture-number">4.8</h3>
+                        <p class="rating__tools__grid__star__picture-votes">(188,357 Votes)</p>
+                    </picture>
+                </div>
+
+                <div class="rating__tools__grid__description">
+                    <p class="rating__tools__grid__description-text">You have to upload and download at least 1 file to rate!</p>
+                </div>
+
+                <div class="rating__tools__grid__counter">
+                    <p class="rating__tools__grid__counter-text">
+                        We've already perfectly processed <span>372,140,092</span>  files with a total size of <span>10,124</span> TB
+                    </p>
+                </div>
+            </main>
+        </div>
+    </section>
+{% endblock %}
+
+
+{% block scripts %}
+
+    <script src="{% static 'build/js/index.js' %}"></script>
+
+{% endblock %}

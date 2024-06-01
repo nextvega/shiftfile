@@ -1,0 +1,1310 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background-color: #FCFCFC;
+  color: #0D1117;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+  padding: 0 !important;
+}
+
+p {
+  font-size: 1.8rem;
+  color: #0D1117;
+  margin: 0;
+}
+
+.content {
+  width: 95%;
+  max-width: 115.5rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 520px) {
+  .content {
+    width: 95%;
+    max-width: 125rem;
+    margin: 0 auto;
+  }
+}
+a {
+  text-decoration: none;
+  margin: 0;
+  color: #0D1117;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+  color: #0D1117;
+}
+
+h2 {
+  font-size: 3.6rem;
+  margin: 0;
+  color: #0D1117;
+}
+
+h3 {
+  font-size: 3rem;
+  margin: 0;
+  color: #0D1117;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.delete__margin__top {
+  margin-top: 4rem !important;
+}
+
+.disable-scroll {
+  overflow-y: hidden;
+}
+
+/* Estilos para el scrollbar en navegadores webkit */
+.background__opacity {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  transition: all 300ms ease-in-out;
+}
+
+/** config sweetalert2 **/
+.swal2-popup {
+  font-size: 1.6rem;
+  font-weight: 800 !important;
+}
+
+.swal2-html-container {
+  margin: 6px !important;
+  margin-bottom: 0 !important;
+  font-size: 1.6rem !important;
+  font-weight: 500 !important;
+}
+
+body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
+  overflow: auto !important;
+}
+
+/** Styles TinyMCE **/
+.tox-tinymce {
+  border: none !important;
+}
+
+.tox .tox-toolbar, .tox .tox-toolbar__overflow, .tox .tox-toolbar__primary {
+  background: none !important;
+  background-color: transparent !important;
+  border-bottom: 3px solid #0D1117 !important;
+}
+
+.tox .tox-toolbar-overlord {
+  background-color: #151b24 !important;
+}
+
+.tox:not([dir=rtl]) .tox-toolbar__group:not(:last-of-type) {
+  border-right: none !important;
+}
+
+.tox .tox-tbtn svg {
+  cursor: pointer;
+  fill: #474747 !important;
+}
+.tox .tox-tbtn svg:hover {
+  fill: #0D1117 !important;
+}
+
+.tox .tox-edit-area__iframe {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  cursor: text;
+}
+
+.tox .tox-statusbar {
+  display: none !important;
+}
+
+.header__principal {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: #FFFFFF;
+  padding: 1.8rem;
+  box-shadow: 0px 0px 16px rgba(39, 43, 51, 0.12);
+}
+.header__principal .header__principal__grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__principal .header__principal__grid .header__principal__grid__left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5rem;
+}
+.header__principal .header__principal__grid .header__principal__grid__left .header__principal__grid__left__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+.header__principal .header__principal__grid .header__principal__grid__left .header__principal__grid__left__logo:hover .header__principal__grid__left__logo-img {
+  transform: scale(0.8);
+}
+.header__principal .header__principal__grid .header__principal__grid__left .header__principal__grid__left__logo .header__principal__grid__left__logo-img {
+  height: 3.2rem;
+  width: 3.2rem;
+  display: block;
+  border-radius: 0.5rem;
+  transition: all 0.5s ease;
+}
+.header__principal .header__principal__grid .header__principal__grid__left .header__principal__grid__left__logo .header__principal__grid__left__logo-text {
+  font-size: 2rem;
+}
+.header__principal .header__principal__grid .header__principal__grid__left .header__principal__grid__left__logo .header__principal__grid__left__logo-text span {
+  color: #4D64FD;
+}
+.header__principal .header__principal__grid .header__principal__grid__left .header__principal__grid__left__navlist {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+  text-align: center;
+}
+.header__principal .header__principal__grid .header__principal__grid__left .header__principal__grid__left__navlist .header__principal__grid__left__navlist__item .header__principal__grid__left__navlist__item-link {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #0D1117;
+  transition: all 0.3s ease;
+}
+.header__principal .header__principal__grid .header__principal__grid__left .header__principal__grid__left__navlist .header__principal__grid__left__navlist__item .header__principal__grid__left__navlist__item-link:hover {
+  color: #4D64FD;
+  text-decoration: underline;
+}
+.header__principal .header__principal__grid .header__principal__grid__right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5rem;
+}
+.header__principal .header__principal__grid .header__principal__grid__right .header__principal__grid__right__navmore .header__principal__grid__right__navmore__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+  text-align: center;
+}
+.header__principal .header__principal__grid .header__principal__grid__right .header__principal__grid__right__navmore .header__principal__grid__right__navmore__list .header__principal__grid__right__navmore__list__item .header__principal__grid__right__navmore__list__item-link {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #0D1117;
+  transition: all 0.3s ease;
+}
+.header__principal .header__principal__grid .header__principal__grid__right .header__principal__grid__right__navmore .header__principal__grid__right__navmore__list .header__principal__grid__right__navmore__list__item .header__principal__grid__right__navmore__list__item-link:hover {
+  color: #4D64FD;
+  text-decoration: underline;
+}
+.header__principal .header__principal__grid .header__principal__grid__right .header__principal__grid__right__login .header__principal__grid__right__login__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+.header__principal .header__principal__grid .header__principal__grid__right .header__principal__grid__right__login .header__principal__grid__right__login__list .header__principal__grid__right__login__list-button:first-of-type {
+  display: block;
+  padding: 0.85rem 1.6rem;
+  background-color: #4D64FD;
+  color: #FFFFFF;
+  font-weight: 600;
+  border: 2px solid #4D64FD;
+  border-radius: 0.3rem;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  letter-spacing: -0.3px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.header__principal .header__principal__grid .header__principal__grid__right .header__principal__grid__right__login .header__principal__grid__right__login__list .header__principal__grid__right__login__list-button:first-of-type:hover {
+  background-color: transparent;
+  color: #4D64FD;
+}
+.header__principal .header__principal__grid .header__principal__grid__right .header__principal__grid__right__login .header__principal__grid__right__login__list .header__principal__grid__right__login__list-button:last-of-type {
+  display: block;
+  padding: 0.85rem 1.6rem;
+  background-color: transparent;
+  color: #4D64FD;
+  font-weight: 600;
+  border: 2px solid #4D64FD;
+  border-radius: 0.3rem;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  letter-spacing: -0.3px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.header__principal .header__principal__grid .header__principal__grid__right .header__principal__grid__right__login .header__principal__grid__right__login__list .header__principal__grid__right__login__list-button:last-of-type:hover {
+  background-color: #4D64FD;
+  color: #FFFFFF;
+}
+
+.footer__principal {
+  background-color: #0D1117;
+  padding: 3rem 0;
+}
+.footer__principal .footer__principal__grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}
+.footer__principal .footer__principal__grid .footer__principal__grid__left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer__principal .footer__principal__grid .footer__principal__grid__left .footer__principal__grid__left__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 5rem;
+}
+.footer__principal .footer__principal__grid .footer__principal__grid__left .footer__principal__grid__left__list .footer__principal__grid__left__list__item .footer__principal__grid__left__list__item-link {
+  font-size: 1.2rem;
+  color: #c4c4c4;
+}
+.footer__principal .footer__principal__grid .footer__principal__grid__left .footer__principal__grid__left__list .footer__principal__grid__left__list__item .footer__principal__grid__left__list__item-link:hover {
+  color: #FFFFFF;
+}
+.footer__principal .footer__principal__grid .footer__principal__grid__left .footer__principal__grid__left-copyright {
+  width: 70rem;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  color: #c4c4c4;
+}
+.footer__principal .footer__principal__grid .footer__principal__grid__right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+.footer__principal .footer__principal__grid .footer__principal__grid__right .bi {
+  color: #c4c4c4;
+  vertical-align: middle;
+  margin-top: 0.2rem;
+}
+.footer__principal .footer__principal__grid .footer__principal__grid__right .footer__principal__grid__righ-button {
+  background-color: transparent;
+  border: 0;
+  color: #c4c4c4;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.footer__principal .footer__principal__grid .footer__principal__grid__right .footer__principal__grid__righ-button:hover {
+  color: #FFFFFF;
+}
+.footer__principal .footer__principal__grid .footer__principal__grid__right .footer__principal__grid__righ-button .bi {
+  font-size: 1rem;
+}
+
+.welcome__slogan {
+  position: relative;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  max-height: 50rem;
+  min-height: 50rem;
+  padding-top: 7rem;
+}
+.welcome__slogan::after {
+  content: "";
+  display: block;
+  top: -120px;
+  width: 100%;
+  z-index: 1;
+  background-image: url("../img/banner-bg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+  filter: blur(25px);
+}
+.welcome__slogan .welcome__slogan__principal {
+  position: relative;
+  z-index: 2;
+  max-height: 26rem;
+  min-height: 26rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.welcome__slogan .welcome__slogan__principal .welcome__slogan__principal-title {
+  font-size: 6rem;
+}
+.welcome__slogan .welcome__slogan__principal .welcome__slogan__principal-title span {
+  color: #4D64FD;
+}
+.welcome__slogan .welcome__slogan__principal .welcome__slogan__principal-description {
+  font-size: 1.6rem;
+  max-width: 83rem;
+  margin-top: 1.5rem;
+  line-height: 1.2;
+  color: #474747;
+}
+
+.popular__tools {
+  position: relative;
+  z-index: 3;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 30px 0px rgba(36, 52, 189, 0.1);
+  margin: 0rem 1rem;
+  margin-top: -17.5rem;
+  border-radius: 2rem;
+  padding: 3.8rem 0rem;
+  margin-bottom: 5rem;
+}
+.popular__tools .popular__tools__grid {
+  display: flex;
+  flex-direction: column;
+}
+.popular__tools .popular__tools__grid .popular__tools__grid__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.popular__tools .popular__tools__grid .popular__tools__grid__header .popular__tools__grid__header__title {
+  margin-left: -2rem;
+}
+.popular__tools .popular__tools__grid .popular__tools__grid__header .popular__tools__grid__header__title .popular__tools__grid__header__title-text {
+  font-size: 2.3rem;
+}
+.popular__tools .popular__tools__grid .popular__tools__grid__header .popular__tools__grid__header__explore {
+  margin-right: -3rem;
+}
+.popular__tools .popular__tools__grid .popular__tools__grid__header .popular__tools__grid__header__explore .popular__tools__grid__header__explore-link {
+  font-weight: 600;
+  color: #4D64FD;
+}
+.popular__tools .popular__tools__grid .popular__tools__grid__body {
+  margin-top: 2.2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 0rem 3.5rem;
+}
+.popular__tools .popular__tools__grid .popular__tools__grid__body .popular__tools__grid__body__tool {
+  min-height: 23rem;
+  max-height: 23rem;
+  width: 25.5rem;
+  position: relative;
+  text-align: left;
+  border: 1px solid #ebebeb;
+  border-radius: 12px;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+.popular__tools .popular__tools__grid .popular__tools__grid__body .popular__tools__grid__body__tool:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.popular__tools .popular__tools__grid .popular__tools__grid__body .popular__tools__grid__body__tool .popular__tools__grid__body__tool__link {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2.5rem 2rem;
+}
+.popular__tools .popular__tools__grid .popular__tools__grid__body .popular__tools__grid__body__tool .popular__tools__grid__body__tool__link .popular__tools__grid__body__tool__link__picture .popular__tools__grid__body__tool__link__picture-img {
+  width: 64px;
+  height: 64px;
+}
+.popular__tools .popular__tools__grid .popular__tools__grid__body .popular__tools__grid__body__tool .popular__tools__grid__body__tool__link .popular__tools__grid__body__tool__link__description .popular__tools__grid__body__tool__link__description-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.popular__tools .popular__tools__grid .popular__tools__grid__body .popular__tools__grid__body__tool .popular__tools__grid__body__tool__link .popular__tools__grid__body__tool__link__description .popular__tools__grid__body__tool__link__description-more {
+  font-size: 1.4rem;
+  color: #474747;
+}
+
+.featured__tools {
+  position: relative;
+  overflow: hidden;
+  max-height: 65rem;
+  min-height: 65rem;
+}
+.featured__tools .featured__tools__nav {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  top: 185px;
+  left: 0px;
+  right: 930px;
+}
+.featured__tools .featured__tools__nav .featured__tools__nav-line {
+  position: relative;
+  background-color: #B9B9BB;
+  width: 2px;
+  height: 27.8rem;
+  text-align: center;
+}
+.featured__tools .featured__tools__nav .featured__tools__nav-line::before {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  content: "";
+  width: 2px;
+  height: 6rem;
+  background-color: #0D1117;
+}
+.featured__tools .featured__tools__nav .featured__tools__nav-start {
+  margin: 0.3rem 0;
+}
+.featured__tools .featured__tools__nav .featured__tools__nav-start .featured__tools__nav-start-text {
+  color: #0D1117;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.featured__tools .featured__tools__nav .featured__tools__nav-finish {
+  margin: 0.3rem 0;
+}
+.featured__tools .featured__tools__nav .featured__tools__nav-finish .featured__tools__nav-finish-text {
+  color: #B9B9BB;
+  font-size: 1.5rem;
+}
+.featured__tools .featured__tools__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  overflow-y: scroll;
+  max-height: 65rem;
+  min-height: 65rem;
+}
+.featured__tools .featured__tools__grid::-webkit-scrollbar {
+  width: 0px;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(1) {
+  position: relative;
+  height: 100%;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(1)::after {
+  position: absolute;
+  top: 0;
+  content: "";
+  display: block;
+  background-color: #FFFFFF;
+  background: linear-gradient(180deg, #DAE2FF 0%, #DDEFFF 100%);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(1) .featured__tools__grid__item__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.7fr;
+  gap: 0rem;
+  align-items: center;
+  padding: 13rem 16rem;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(1) .featured__tools__grid__item__grid .featured__tools__grid__item__header .featured__tools__grid__item__header-title {
+  font-size: 4.8rem;
+  letter-spacing: -0.4px;
+  line-height: 1.2;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(1) .featured__tools__grid__item__grid .featured__tools__grid__item__header .featured__tools__grid__item__header-title span {
+  color: #4D64FD;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(1) .featured__tools__grid__item__grid .featured__tools__grid__item__header .featured__tools__grid__item__header__description {
+  padding-left: 2.5rem;
+  margin-top: 2.5rem;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(1) .featured__tools__grid__item__grid .featured__tools__grid__item__header .featured__tools__grid__item__header__description .featured__tools__grid__item__header__description-text {
+  list-style: disc;
+  margin-bottom: 0.8rem;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(1) .featured__tools__grid__item__grid .featured__tools__grid__item__header .featured__tools__grid__item__header-link {
+  display: block;
+  margin-top: 4.2rem;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 1rem;
+  outline: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #4D64FD 0%, #C54DFD 100%);
+  color: #FFFFFF;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(1) .featured__tools__grid__item__grid .featured__tools__grid__item__header .featured__tools__grid__item__header-link:hover {
+  background: linear-gradient(90deg, #7183FF 0%, #D06DFF 100%);
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(1) .featured__tools__grid__item__grid .featured__tools__grid__item__picture {
+  margin-left: 4.2rem;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(1) .featured__tools__grid__item__grid .featured__tools__grid__item__picture .featured__tools__grid__item__picture-img {
+  width: 48rem;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(2) {
+  position: relative;
+  height: 100%;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(2)::after {
+  position: absolute;
+  top: 0;
+  content: "";
+  display: block;
+  background-color: #FFFFFF;
+  background: linear-gradient(180deg, #DDEFFF 0%, #DDFFF9 100%);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(2) .featured__tools__grid__item__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.7fr;
+  gap: 0rem;
+  align-items: center;
+  padding: 8rem 16rem;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(2) .featured__tools__grid__item__grid .featured__tools__grid__item__header .featured__tools__grid__item__header-title {
+  font-size: 4.8rem;
+  letter-spacing: -0.4px;
+  line-height: 1.2;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(2) .featured__tools__grid__item__grid .featured__tools__grid__item__header .featured__tools__grid__item__header-title span {
+  color: #2E9AFF;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(2) .featured__tools__grid__item__grid .featured__tools__grid__item__header .featured__tools__grid__item__header__description {
+  padding-left: 2.5rem;
+  margin-top: 2.5rem;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(2) .featured__tools__grid__item__grid .featured__tools__grid__item__header .featured__tools__grid__item__header__description .featured__tools__grid__item__header__description-text {
+  list-style: disc;
+  margin-bottom: 0.8rem;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(2) .featured__tools__grid__item__grid .featured__tools__grid__item__header .featured__tools__grid__item__header-link {
+  display: block;
+  margin-top: 4.2rem;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 1rem;
+  outline: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #4D64FD 0%, #C54DFD 100%);
+  color: #FFFFFF;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(2) .featured__tools__grid__item__grid .featured__tools__grid__item__header .featured__tools__grid__item__header-link:hover {
+  background: linear-gradient(90deg, #7183FF 0%, #D06DFF 100%);
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(2) .featured__tools__grid__item__grid .featured__tools__grid__item__picture {
+  margin-left: 4.2rem;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(2) .featured__tools__grid__item__grid .featured__tools__grid__item__picture .featured__tools__grid__item__picture-img {
+  width: 48rem;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(3) {
+  position: relative;
+  height: 100%;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(3)::after {
+  position: absolute;
+  top: 0;
+  content: "";
+  display: block;
+  background-color: #FFFFFF;
+  background: linear-gradient(180deg, #DDFFEB 0%, #E2FFDD 100%);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(3) .featured__tools__grid__item__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.7fr;
+  gap: 0rem;
+  align-items: center;
+  padding: 8rem 16rem;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(3) .featured__tools__grid__item__grid .featured__tools__grid__item__header .featured__tools__grid__item__header-title {
+  font-size: 4.8rem;
+  letter-spacing: -0.4px;
+  line-height: 1.2;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(3) .featured__tools__grid__item__grid .featured__tools__grid__item__header .featured__tools__grid__item__header-title span {
+  color: #29CC6A;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(3) .featured__tools__grid__item__grid .featured__tools__grid__item__header .featured__tools__grid__item__header__description {
+  padding-left: 2.5rem;
+  margin-top: 2.5rem;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(3) .featured__tools__grid__item__grid .featured__tools__grid__item__header .featured__tools__grid__item__header__description .featured__tools__grid__item__header__description-text {
+  list-style: disc;
+  margin-bottom: 0.8rem;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(3) .featured__tools__grid__item__grid .featured__tools__grid__item__header .featured__tools__grid__item__header-link {
+  display: block;
+  margin-top: 4.2rem;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 1rem;
+  outline: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #4D64FD 0%, #C54DFD 100%);
+  color: #FFFFFF;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(3) .featured__tools__grid__item__grid .featured__tools__grid__item__header .featured__tools__grid__item__header-link:hover {
+  background: linear-gradient(90deg, #7183FF 0%, #D06DFF 100%);
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(3) .featured__tools__grid__item__grid .featured__tools__grid__item__picture {
+  margin-left: 4.2rem;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(3) .featured__tools__grid__item__grid .featured__tools__grid__item__picture .featured__tools__grid__item__picture-img {
+  width: 48rem;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(4) {
+  position: relative;
+  height: 100%;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(4)::after {
+  position: absolute;
+  top: 0;
+  content: "";
+  display: block;
+  background-color: #FFFFFF;
+  background: linear-gradient(180deg, #FCFFDE 0%, #FEF4EB 100%);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(4) .featured__tools__grid__item__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.7fr;
+  gap: 0rem;
+  align-items: center;
+  padding: 8rem 16rem;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(4) .featured__tools__grid__item__grid .featured__tools__grid__item__header .featured__tools__grid__item__header-title {
+  font-size: 4.8rem;
+  letter-spacing: -0.4px;
+  line-height: 1.2;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(4) .featured__tools__grid__item__grid .featured__tools__grid__item__header .featured__tools__grid__item__header-title span {
+  color: #F28514;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(4) .featured__tools__grid__item__grid .featured__tools__grid__item__header .featured__tools__grid__item__header__description {
+  padding-left: 2.5rem;
+  margin-top: 2.5rem;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(4) .featured__tools__grid__item__grid .featured__tools__grid__item__header .featured__tools__grid__item__header__description .featured__tools__grid__item__header__description-text {
+  list-style: disc;
+  margin-bottom: 0.8rem;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(4) .featured__tools__grid__item__grid .featured__tools__grid__item__header .featured__tools__grid__item__header-link {
+  display: block;
+  margin-top: 4.2rem;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 1rem;
+  outline: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #4D64FD 0%, #C54DFD 100%);
+  color: #FFFFFF;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(4) .featured__tools__grid__item__grid .featured__tools__grid__item__header .featured__tools__grid__item__header-link:hover {
+  background: linear-gradient(90deg, #7183FF 0%, #D06DFF 100%);
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(4) .featured__tools__grid__item__grid .featured__tools__grid__item__picture {
+  margin-left: 4.2rem;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(4) .featured__tools__grid__item__grid .featured__tools__grid__item__picture .featured__tools__grid__item__picture-img {
+  width: 48rem;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(5) {
+  position: relative;
+  height: 100%;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(5)::after {
+  position: absolute;
+  top: 0;
+  content: "";
+  display: block;
+  background-color: #FFFFFF;
+  background: linear-gradient(180deg, #FEEBEB 0%, #FCEBFE 100%);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(5) .featured__tools__grid__item__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.7fr;
+  gap: 0rem;
+  align-items: center;
+  padding: 8rem 16rem;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(5) .featured__tools__grid__item__grid .featured__tools__grid__item__header .featured__tools__grid__item__header-title {
+  font-size: 4.8rem;
+  letter-spacing: -0.4px;
+  line-height: 1.2;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(5) .featured__tools__grid__item__grid .featured__tools__grid__item__header .featured__tools__grid__item__header-title span {
+  color: #F955FC;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(5) .featured__tools__grid__item__grid .featured__tools__grid__item__header .featured__tools__grid__item__header__description {
+  padding-left: 2.5rem;
+  margin-top: 2.5rem;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(5) .featured__tools__grid__item__grid .featured__tools__grid__item__header .featured__tools__grid__item__header__description .featured__tools__grid__item__header__description-text {
+  list-style: disc;
+  margin-bottom: 0.8rem;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(5) .featured__tools__grid__item__grid .featured__tools__grid__item__header .featured__tools__grid__item__header-link {
+  display: block;
+  margin-top: 4.2rem;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 1rem;
+  outline: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #4D64FD 0%, #C54DFD 100%);
+  color: #FFFFFF;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(5) .featured__tools__grid__item__grid .featured__tools__grid__item__header .featured__tools__grid__item__header-link:hover {
+  background: linear-gradient(90deg, #7183FF 0%, #D06DFF 100%);
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(5) .featured__tools__grid__item__grid .featured__tools__grid__item__picture {
+  margin-left: 4.2rem;
+}
+.featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(5) .featured__tools__grid__item__grid .featured__tools__grid__item__picture .featured__tools__grid__item__picture-img {
+  width: 48rem;
+}
+
+.skills__file {
+  padding: 7rem 0;
+}
+.skills__file .skills__file__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.skills__file .skills__file__grid .skills__file__grid__header {
+  text-align: center;
+}
+.skills__file .skills__file__grid .skills__file__grid__header .skills__file__grid__header-title {
+  font-size: 5rem;
+}
+.skills__file .skills__file__grid .skills__file__grid__body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: stretch;
+  margin-top: 3rem;
+  gap: 3rem;
+}
+.skills__file .skills__file__grid .skills__file__grid__body .skills__file__grid__body__item {
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  border-radius: 1.6rem;
+  padding: 4rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.skills__file .skills__file__grid .skills__file__grid__body .skills__file__grid__body__item .skills__file__grid__body__item__picture {
+  margin-bottom: 2rem;
+}
+.skills__file .skills__file__grid .skills__file__grid__body .skills__file__grid__body__item .skills__file__grid__body__item__picture .skills__file__grid__body__item__picture-img {
+  width: 8rem;
+  margin: 0 auto;
+}
+.skills__file .skills__file__grid .skills__file__grid__body .skills__file__grid__body__item .skills__file__grid__body__item__text {
+  text-align: center;
+}
+.skills__file .skills__file__grid .skills__file__grid__body .skills__file__grid__body__item .skills__file__grid__body__item__text .skills__file__grid__body__item__text-title {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+.skills__file .skills__file__grid .skills__file__grid__body .skills__file__grid__body__item .skills__file__grid__body__item__text .skills__file__grid__body__item__text-description {
+  font-size: 1.5rem;
+}
+
+.banner__tools {
+  padding: 2rem 0;
+  padding-bottom: 4rem;
+}
+.banner__tools .banner__tools__grid {
+  background: linear-gradient(90deg, #D5E9FF 0%, #EEF3FF 100.06%), #FFFFFF;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  border-radius: 2.4rem;
+  padding: 4rem 6rem;
+  align-items: center;
+  gap: 0rem;
+}
+.banner__tools .banner__tools__grid .banner__tools__grid__left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.banner__tools .banner__tools__grid .banner__tools__grid__left .banner__tools__grid__left__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+}
+.banner__tools .banner__tools__grid .banner__tools__grid__left .banner__tools__grid__left__logo .banner__tools__grid__left__logo__picture .banner__tools__grid__left__logo__picture-img {
+  height: 5rem;
+  width: 5rem;
+  display: block;
+  border-radius: 0.5rem;
+  transition: all 0.5s ease;
+}
+.banner__tools .banner__tools__grid .banner__tools__grid__left .banner__tools__grid__left__logo .banner__tools__grid__left__logo-title {
+  font-size: 3rem;
+}
+.banner__tools .banner__tools__grid .banner__tools__grid__left .banner__tools__grid__left__logo .banner__tools__grid__left__logo-title span {
+  color: #4D64FD;
+}
+.banner__tools .banner__tools__grid .banner__tools__grid__left .banner__tools__grid__left__desciption {
+  padding-right: 6rem;
+}
+.banner__tools .banner__tools__grid .banner__tools__grid__left .banner__tools__grid__left__desciption .banner__tools__grid__left__desciption-text {
+  font-weight: 500;
+  font-size: 2rem;
+}
+.banner__tools .banner__tools__grid .banner__tools__grid__left .banner__tools__grid__left__desciption .banner__tools__grid__left__desciption__list {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+.banner__tools .banner__tools__grid .banner__tools__grid__left .banner__tools__grid__left__desciption .banner__tools__grid__left__desciption__list .banner__tools__grid__left__desciption__list-button:first-of-type {
+  padding: 1.5rem 3rem;
+  border: 2px solid #4D64FD;
+  background-color: #4D64FD;
+  color: #FFFFFF;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.banner__tools .banner__tools__grid .banner__tools__grid__left .banner__tools__grid__left__desciption .banner__tools__grid__left__desciption__list .banner__tools__grid__left__desciption__list-button:last-of-type {
+  padding: 1.5rem 3rem;
+  border: 2px solid #4D64FD;
+  background-color: transparent;
+  color: #4D64FD;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.banner__tools .banner__tools__grid .banner__tools__grid__left .banner__tools__grid__left__desciption .banner__tools__grid__left__desciption__list .banner__tools__grid__left__desciption__list-button:last-of-type:hover {
+  background-color: #4D64FD;
+  color: #FFFFFF;
+}
+
+.rating__tools {
+  padding-bottom: 4rem;
+}
+.rating__tools .rating__tools__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.rating__tools .rating__tools__grid .rating__tools__grid__star {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+.rating__tools .rating__tools__grid .rating__tools__grid__star .rating__tools__grid__star-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.rating__tools .rating__tools__grid .rating__tools__grid__star .rating__tools__grid__star__picture {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 2.3rem;
+  background: #F4F4F4;
+  border-radius: 5.9rem;
+}
+.rating__tools .rating__tools__grid .rating__tools__grid__star .rating__tools__grid__star__picture .rating__tools__grid__star__picture-img {
+  width: 19.2rem;
+  height: 3.2rem;
+  margin-right: 1rem;
+}
+.rating__tools .rating__tools__grid .rating__tools__grid__star .rating__tools__grid__star__picture .rating__tools__grid__star__picture-number {
+  color: #474747;
+}
+.rating__tools .rating__tools__grid .rating__tools__grid__star .rating__tools__grid__star__picture .rating__tools__grid__star__picture-votes {
+  font-size: 1.6rem;
+  color: #474747;
+}
+.rating__tools .rating__tools__grid .rating__tools__grid__description {
+  text-align: center;
+  margin-top: 0rem;
+}
+.rating__tools .rating__tools__grid .rating__tools__grid__description .rating__tools__grid__description-text {
+  font-size: 1.6rem;
+  color: #474747;
+}
+.rating__tools .rating__tools__grid .rating__tools__grid__counter {
+  text-align: center;
+}
+.rating__tools .rating__tools__grid .rating__tools__grid__counter .rating__tools__grid__counter-text {
+  font-size: 1.6rem;
+  color: #474747;
+}
+.rating__tools .rating__tools__grid .rating__tools__grid__counter .rating__tools__grid__counter-text span {
+  font-weight: 700;
+  color: #E86136;
+}

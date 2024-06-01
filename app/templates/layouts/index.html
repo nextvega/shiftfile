@@ -1,0 +1,133 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="nextvega fullstack web developer portfolio and blog website">
+    <link rel="shortcut icon" href="{% static 'build/img/icon.svg'%}" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'build/css/app.css' %}" as="stylesheet">
+    <title>ShiftFile - {{title}}</title>
+</head>
+<body>
+
+    <header class="header__principal">
+        <div class="content">
+            <nav class="header__principal__grid">
+                <section class="header__principal__grid__left">
+                    <a href="{% url 'inicio'%}" class="header__principal__grid__left__logo">
+                        <img class="header__principal__grid__left__logo-img" src="{% static 'build/img/icon.svg'%}" alt="ShiftFile icon">
+                        <h1 class="header__principal__grid__left__logo-text">Shift<span>File</span>.io</h1>
+                    </a>
+
+                    <ul class="header__principal__grid__left__navlist">
+
+                        <li class="header__principal__grid__left__navlist__item">
+                            <a class="header__principal__grid__left__navlist__item-link" href="#">Converter</a>
+                        </li>
+
+                        <li class="header__principal__grid__left__navlist__item">
+                            <a class="header__principal__grid__left__navlist__item-link" href="#">Compress</a>
+                        </li>
+
+                        <li class="header__principal__grid__left__navlist__item">
+                            <a class="header__principal__grid__left__navlist__item-link" href="#">All Tools <i class="bi bi-chevron-compact-right"></i></a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="header__principal__grid__right">
+                    <div class="header__principal__grid__right__navmore">
+                        <ul class="header__principal__grid__right__navmore__list">
+                            <li class="header__principal__grid__right__navmore__list__item">
+                                <a class="header__principal__grid__right__navmore__list__item-link" href="#">Template</a>
+                            </li>
+                            <li class="header__principal__grid__right__navmore__list__item">
+                                <a class="header__principal__grid__right__navmore__list__item-link" href="#">Pricing</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="header__principal__grid__right__login">
+                        <ul class="header__principal__grid__right__login__list">
+                            <button class="header__principal__grid__right__login__list-button">
+                                Sign Up <i class="bi bi-chevron-compact-right"></i>
+                            </button>
+
+                            <button class="header__principal__grid__right__login__list-button">
+                                Log In <i class="bi bi-chevron-compact-right"></i>
+                            </button>
+                        </ul>
+                    </div>
+                </section>
+            </nav>
+        </div>
+    </header>
+
+    {% block content%}
+
+
+    {% endblock %}
+
+    <footer class="footer__principal">
+        <div class="content">
+            <main class="footer__principal__grid">
+                <section class="footer__principal__grid__left">
+                    <ul class="footer__principal__grid__left__list">
+                        <li class="footer__principal__grid__left__list__item">
+                            <a class="footer__principal__grid__left__list__item-link" href="#">Terms and Conditions</a>
+                        </li>
+
+                        <li class="footer__principal__grid__left__list__item">
+                            <a class="footer__principal__grid__left__list__item-link" href="#">Privacy</a>
+                        </li>
+
+                        <li class="footer__principal__grid__left__list__item">
+                            <a class="footer__principal__grid__left__list__item-link" href="#">Cookies</a>
+                        </li>
+
+                        <li class="footer__principal__grid__left__list__item">
+                            <a class="footer__principal__grid__left__list__item-link" href="#">License Agreement</a>
+                        </li>
+
+                        <li class="footer__principal__grid__left__list__item">
+                            <a class="footer__principal__grid__left__list__item-link" href="#">Refund Policy</a>
+                        </li>
+
+                        <li class="footer__principal__grid__left__list__item">
+                            <a class="footer__principal__grid__left__list__item-link" href="#">Uninstall</a>
+                        </li>
+                    </ul>
+
+                    <p class="footer__principal__grid__left-copyright">
+                        Copyright © 2024 NextVega. All rights reserved. The order process, tax issue, and invoicing to end users are conducted by NextVega Technology Group Co., Ltd.
+                    </p>
+                </section>
+
+                <section class="footer__principal__grid__right">
+                    <i class="bi bi-globe"></i>
+                    <button class="footer__principal__grid__righ-button">
+                        Language <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                </section>
+            </main>
+        </div>
+    </footer>
+
+    {% block scripts %}
+
+
+    {% endblock %}
+    
+</body>
+</html>
