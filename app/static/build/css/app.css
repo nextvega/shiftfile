@@ -6,6 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -465,6 +466,7 @@ body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
   background-color: #FFFFFF;
   padding: 1.8rem;
   box-shadow: 0px 0px 16px rgba(39, 43, 51, 0.12);
+  top: 0;
 }
 .header__principal .header__principal__grid {
   display: flex;
@@ -585,7 +587,106 @@ body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
 
 .footer__principal {
   background-color: #0D1117;
-  padding: 3rem 0;
+}
+.footer__principal .footer__principal__grid-navigate {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 5rem;
+  align-items: center;
+  padding: 4rem 0;
+  padding-bottom: 3rem;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__grid-navigate__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__grid-navigate__logo:hover .footer__principal__grid-navigate-img {
+  transform: scale(0.8);
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__grid-navigate__logo .footer__principal__grid-navigate-img {
+  height: 7.2rem;
+  width: 7.2rem;
+  display: block;
+  border-radius: 0.5rem;
+  transition: all 0.5s ease;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__grid-navigate__logo .footer__principal__grid-navigate-text {
+  font-size: 2.5rem;
+  color: #FFFFFF;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__grid-navigate__logo .footer__principal__grid-navigate-text span {
+  color: #4D64FD;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__grid-navigate__logo .footer__principal__grid-navigate-slogan {
+  font-size: 2rem;
+  color: #FFFFFF;
+  font-family: "Shadows Into Light", cursive;
+  margin-top: -2rem;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__grid-navigate__logo .footer__principal__grid-navigate-slogan span {
+  color: #4D64FD;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__nav {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__nav .footer__principal__nav__list .footer__principal__nav__list-title {
+  color: #FFFFFF;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__nav .footer__principal__nav__list .footer__principal__nav__list__elements {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__nav .footer__principal__nav__list .footer__principal__nav__list__elements .footer__principal__nav__list__elements__item .footer__principal__nav__list__elements__item-link {
+  color: #c4c4c4;
+  font-size: 1.2rem;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__nav .footer__principal__nav__list .footer__principal__nav__list__elements .footer__principal__nav__list__elements__item .footer__principal__nav__list__elements__item-link:hover {
+  text-decoration: underline;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__nav .footer__principal__nav__list-social {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__nav .footer__principal__nav__list-social .footer__principal__nav__list-grid .footer__principal__nav__list-title {
+  color: #FFFFFF;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__nav .footer__principal__nav__list-social .footer__principal__nav__list-grid .footer__principal__nav__list__content .footer__principal__nav__list__content__elements {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__nav .footer__principal__nav__list-social .footer__principal__nav__list-grid .footer__principal__nav__list__content .footer__principal__nav__list__content__elements .footer__principal__nav__list__content__elements-item .footer__principal__nav__list__content__elements-item-link {
+  color: #c4c4c4;
+  font-size: 1.2rem;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__nav .footer__principal__nav__list-social .footer__principal__nav__list-grid .footer__principal__nav__list__content .footer__principal__nav__list__content__elements .footer__principal__nav__list__content__elements-item .footer__principal__nav__list__content__elements-item-link:hover {
+  text-decoration: underline;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__nav .footer__principal__nav__list-social .footer__principal__nav__list__content__elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 2rem;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__nav .footer__principal__nav__list-social .footer__principal__nav__list__content__elements .footer__principal__nav__list__content__elements-item .footer__principal__nav__list__content__elements-item-link .bi {
+  color: #c4c4c4;
+  font-size: 1.4rem;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__nav .footer__principal__nav__list-social .footer__principal__nav__list__content__elements .footer__principal__nav__list__content__elements-item .footer__principal__nav__list__content__elements-item-link .bi:hover {
+  color: #FFFFFF;
 }
 .footer__principal .footer__principal__grid {
   display: flex;
@@ -593,6 +694,7 @@ body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
   justify-content: space-between;
   align-items: center;
   gap: 5rem;
+  padding: 2rem 0;
 }
 .footer__principal .footer__principal__grid .footer__principal__grid__left {
   display: flex;
@@ -641,6 +743,10 @@ body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
 }
 .footer__principal .footer__principal__grid .footer__principal__grid__right .footer__principal__grid__righ-button .bi {
   font-size: 1rem;
+}
+
+.footer__principal__grid-border {
+  border-top: 1px solid #474747;
 }
 
 .welcome__slogan {
@@ -1307,4 +1413,204 @@ body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
 .rating__tools .rating__tools__grid .rating__tools__grid__counter .rating__tools__grid__counter-text span {
   font-weight: 700;
   color: #E86136;
+}
+
+.skills__more {
+  background-color: #FFFFFF;
+  padding: 1rem;
+  padding-bottom: 5rem;
+}
+.skills__more .skills__more__grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.skills__more .skills__more__grid .skills__more__grid-flex .skills__more__grid__item {
+  position: relative;
+}
+.skills__more .skills__more__grid .skills__more__grid-flex .skills__more__grid__item .skills__more__grid__item__picture {
+  display: block;
+  border-radius: 2rem;
+  max-height: 27rem;
+  min-height: 27rem;
+  overflow: hidden;
+}
+.skills__more .skills__more__grid .skills__more__grid-flex .skills__more__grid__item .skills__more__grid__item__picture .skills__more__grid__item__picture-img {
+  border-radius: 2rem;
+  object-fit: cover;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+.skills__more .skills__more__grid .skills__more__grid-flex .skills__more__grid__item .skills__more__grid__item__picture .skills__more__grid__item__picture-img:hover {
+  transform: scale(1.1) rotate(-2deg);
+}
+.skills__more .skills__more__grid .skills__more__grid-flex .skills__more__grid__item .skills__more__grid__item__picture .skills__more__grid__item__text {
+  position: absolute;
+  top: 0;
+  padding: 2.5rem 0 0 2.5rem;
+}
+.skills__more .skills__more__grid .skills__more__grid-flex .skills__more__grid__item .skills__more__grid__item__picture .skills__more__grid__item__text .skills__more__grid__item__text-title {
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.skills__more .skills__more__grid .skills__more__grid-flex .skills__more__grid__item .skills__more__grid__item__picture .skills__more__grid__item__text .skills__more__grid__item__text-description {
+  margin-top: 1rem;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+}
+.skills__more .skills__more__grid .skills__more__grid-flex:nth-child(1) {
+  display: flex;
+  width: 100%;
+  gap: 3rem;
+}
+.skills__more .skills__more__grid .skills__more__grid-flex:nth-child(1) .skills__more__grid__item:nth-child(1) {
+  flex: 1.4;
+}
+.skills__more .skills__more__grid .skills__more__grid-flex:nth-child(1) .skills__more__grid__item:nth-child(2) {
+  flex: 2;
+}
+.skills__more .skills__more__grid .skills__more__grid-flex:nth-child(2) {
+  display: flex;
+  width: 100%;
+  gap: 3rem;
+}
+.skills__more .skills__more__grid .skills__more__grid-flex:nth-child(2) .skills__more__grid__item:nth-child(1) {
+  flex: 2;
+}
+.skills__more .skills__more__grid .skills__more__grid-flex:nth-child(2) .skills__more__grid__item:nth-child(2) {
+  flex: 1.4;
+}
+
+.popular__tools-alternative {
+  background-color: transparent;
+  box-shadow: none;
+  margin: 0;
+  margin-top: 6.5rem;
+}
+.popular__tools-alternative .popular__tools__grid {
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  border-radius: 2rem;
+  padding: 5rem 0;
+  padding-top: 2.5rem;
+}
+.popular__tools-alternative .popular__tools__grid .popular__tools__grid__header .popular__tools__grid__header__title {
+  margin-left: 3rem;
+}
+.popular__tools-alternative .popular__tools__grid .popular__tools__grid__header .popular__tools__grid__header__title .popular__tools__grid__header__title-text {
+  font-size: 2.5rem;
+  color: #474747;
+}
+.popular__tools-alternative .popular__tools__grid .popular__tools__grid__header .popular__tools__grid__header__explore {
+  margin-right: 3rem;
+}
+
+.popular__tools-alternative-margin {
+  margin-top: -3rem;
+}
+
+.router__converter {
+  padding-top: 10rem;
+}
+.router__converter .router__converter__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.router__converter .router__converter__grid .router__converter__grid__links .router__converter__grid__links__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+.router__converter .router__converter__grid .router__converter__grid__links .router__converter__grid__links__list .router__converter__grid__links__list__item .router__converter__grid__links__list__item-link:hover {
+  text-decoration: underline;
+  color: #4D64FD;
+}
+.router__converter .router__converter__grid .router__converter__grid__links .router__converter__grid__links__list .router__converter__grid__links__list__item .router__converter__grid__links__list__item-link:hover .bi {
+  color: #0D1117;
+}
+.router__converter .router__converter__grid .router__converter__grid__links .router__converter__grid__links__list .router__converter__grid__links__list__item .router__converter__grid__links__list__item-link .bi {
+  margin-right: 1rem;
+}
+.router__converter .router__converter__grid .router__converter__grid__title {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.router__converter .router__converter__grid .router__converter__grid__title .router__converter__grid__title__picture {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.router__converter .router__converter__grid .router__converter__grid__title .router__converter__grid__title__picture .router__converter__grid__title__picture-img {
+  max-width: 5rem;
+  min-width: 5rem;
+  max-height: 5rem;
+  min-height: 5rem;
+  object-fit: cover;
+}
+.router__converter .router__converter__grid .router__converter__grid__title .router__converter__grid__title__picture .router__converter__grid__title__picture-text {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 0.4rem;
+}
+.router__converter .router__converter__grid .router__converter__grid__title .router__converter__grid__title-description {
+  font-size: 1.4rem;
+  text-align: center;
+  color: #474747;
+}
+
+.upload__converter {
+  margin-top: 3rem;
+  margin-bottom: -4rem;
+}
+.upload__converter .upload__converter__grid {
+  background: #FFFFFF;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 360px;
+}
+.upload__converter .upload__converter__grid .upload__converter__grid__file {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+.upload__converter .upload__converter__grid .upload__converter__grid__file .upload__converter__grid__file__picture .upload__converter__grid__file__picture-img {
+  max-width: 12.8rem;
+  min-width: 12.8rem;
+  margin: 0 auto;
+}
+.upload__converter .upload__converter__grid .upload__converter__grid__file .upload__converter__grid__file__button .upload__converter__grid__file__button-click {
+  width: 289px;
+  height: 52px;
+  background: #4D64FD;
+  border-radius: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 1.6rem;
+  border: none;
+  position: relative;
+  z-index: 3;
+  cursor: pointer;
+}
+.upload__converter .upload__converter__grid .upload__converter__grid__file .upload__converter__grid__file__button .upload__converter__grid__file__button-text {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 0;
 }
