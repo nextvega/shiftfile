@@ -957,7 +957,7 @@ body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
   grid-template-columns: 1fr 1.7fr;
   gap: 0rem;
   align-items: center;
-  padding: 13rem 16rem;
+  padding: 13.5rem 16rem;
 }
 .featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(1) .featured__tools__grid__item__grid .featured__tools__grid__item__header .featured__tools__grid__item__header-title {
   font-size: 4.8rem;
@@ -1236,6 +1236,11 @@ body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
 }
 .featured__tools .featured__tools__grid .featured__tools__grid__item:nth-child(5) .featured__tools__grid__item__grid .featured__tools__grid__item__picture .featured__tools__grid__item__picture-img {
   width: 48rem;
+}
+@media screen and (min-width: 1500px) {
+  .featured__tools .featured__tools__grid .featured__tools__grid__item .featured__tools__grid__item__grid {
+    padding: 10.5rem 16rem !important;
+  }
 }
 
 .skills__file {

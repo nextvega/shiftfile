@@ -3,7 +3,6 @@ console.log('Ejecutando..');
 
 document.addEventListener("DOMContentLoaded", function() {
     var featuredTools = document.querySelector(".featured__tools__grid");
-
     featuredTools.addEventListener("scroll", function() {
         // Centrar el elemento en la pantalla
         featuredTools.scrollIntoView({ block: 'center', behavior: 'smooth' });
@@ -12,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("scroll", function() {
         isScrolling = true;
         setTimeout(function() {
-            centerInViewport();
             isScrolling = false;
         }, 100);
     });
