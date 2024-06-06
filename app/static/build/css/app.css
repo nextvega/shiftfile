@@ -519,6 +519,9 @@ body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
   color: #4D64FD;
   text-decoration: underline;
 }
+.header__principal .header__principal__grid .header__principal__grid__left .header__principal__grid__left__navlist .header__principal__grid__left__navlist__item .header__principal__grid__left__navlist__item-link .bi::before {
+  vertical-align: -0.15em;
+}
 .header__principal .header__principal__grid .header__principal__grid__right {
   display: flex;
   flex-direction: row;
@@ -542,6 +545,9 @@ body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
   color: #4D64FD;
   text-decoration: underline;
 }
+.header__principal .header__principal__grid .header__principal__grid__right .header__principal__grid__right__navmore .header__principal__grid__right__navmore__list .header__principal__grid__right__navmore__list__item .header__principal__grid__right__navmore__list__item-link .bi::before {
+  vertical-align: -0.15em;
+}
 .header__principal .header__principal__grid .header__principal__grid__right .header__principal__grid__right__login .header__principal__grid__right__login__list {
   display: flex;
   flex-direction: row;
@@ -550,7 +556,7 @@ body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
 }
 .header__principal .header__principal__grid .header__principal__grid__right .header__principal__grid__right__login .header__principal__grid__right__login__list .header__principal__grid__right__login__list-button:first-of-type {
   display: block;
-  padding: 0.85rem 1.6rem;
+  padding: 0.6rem 1.6rem;
   background-color: #4D64FD;
   color: #FFFFFF;
   font-weight: 600;
@@ -568,7 +574,7 @@ body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
 }
 .header__principal .header__principal__grid .header__principal__grid__right .header__principal__grid__right__login .header__principal__grid__right__login__list .header__principal__grid__right__login__list-button:last-of-type {
   display: block;
-  padding: 0.85rem 1.6rem;
+  padding: 0.6rem 1.6rem;
   background-color: transparent;
   color: #4D64FD;
   font-weight: 600;
@@ -1572,7 +1578,7 @@ body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
 }
 .upload__converter .upload__converter__grid {
   background: #FFFFFF;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
   border-radius: 16px;
   display: flex;
   flex-direction: column;
@@ -1613,4 +1619,219 @@ body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
   font-size: 1.4rem;
   color: rgba(0, 0, 0, 0.6);
   margin-bottom: 0;
+}
+
+.login__principal {
+  background-size: cover;
+  width: 100%;
+  min-height: 100%;
+  padding-top: 7rem;
+}
+.login__principal::after {
+  content: "";
+  display: block;
+  top: -500px;
+  width: 100%;
+  z-index: -1;
+  background-image: url(../img/banner-bg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+  filter: blur(25px);
+}
+.login__principal .login__principal__grid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 11rem;
+  padding: 6rem 4rem;
+  position: relative;
+}
+.login__principal .login__principal__grid .login__principal__grid__picture .login__principal__grid__picture-img {
+  max-width: 50rem;
+  min-width: 50rem;
+  transition: all 0.3s ease;
+}
+.login__principal .login__principal__grid .login__principal__grid__picture .login__principal__grid__picture-img:hover {
+  transform: scale(0.8);
+}
+.login__principal .login__principal__grid .login__principal__grid__form {
+  background-color: #FFFFFF;
+  padding: 3rem 4rem;
+  max-width: 38rem;
+  min-width: 38rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  max-height: 59rem;
+  min-height: 59rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__header .login__principal__grid__form__header-title {
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__header .login__principal__grid__form__header__options .login__principal__grid__form__header__options-title {
+  color: #979797;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__header .login__principal__grid__form__header__options .login__principal__grid__form__header__options__list {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__header .login__principal__grid__form__header__or {
+  margin: 0;
+  padding: 0;
+  padding: 1rem 0;
+  padding-top: 0.5rem;
+  position: relative;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__header .login__principal__grid__form__header__or .login__principal__grid__form__header__or-text {
+  position: relative;
+  text-align: center;
+  color: #979797;
+  font-size: 1.2rem;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__header .login__principal__grid__form__header__or .login__principal__grid__form__header__or-text::before {
+  content: "";
+  position: absolute;
+  width: 135px;
+  height: 0.5px;
+  background-color: rgba(0, 0, 0, 0.12);
+  top: 9.5px;
+  left: 0;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__header .login__principal__grid__form__header__or .login__principal__grid__form__header__or-text::after {
+  content: "";
+  position: absolute;
+  width: 135px;
+  height: 0.5px;
+  background-color: rgba(0, 0, 0, 0.12);
+  top: 9.5px;
+  left: auto;
+  right: 0;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(1),
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(2) {
+  padding: 0.8rem 0rem;
+  padding-right: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(1) input[type=email],
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(2) input[type=email] {
+  font-size: 1.4rem;
+  width: 100%;
+  border: none;
+  color: #5a5a5a;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(1) input[type=email]::placeholder,
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(2) input[type=email]::placeholder {
+  font-size: 13.3px;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(1) input[type=email]:focus,
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(2) input[type=email]:focus {
+  outline: none;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(1) input[type=password],
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(2) input[type=password] {
+  font-size: 1.4rem;
+  width: 100%;
+  border: none;
+  color: #5a5a5a;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(1) input[type=password]::placeholder,
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(2) input[type=password]::placeholder {
+  font-size: 13.3px;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(1) input[type=password]:focus,
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(2) input[type=password]:focus {
+  outline: none;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(1) .bi,
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(2) .bi {
+  color: #979797;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(1) {
+  padding-top: 2rem;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(2) {
+  padding-top: 2rem;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 0.7rem;
+  margin-top: 0.5rem;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(3) .login__principal__grid__form__body__content-text {
+  color: #757575;
+  font-size: 1.3rem;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(3) input[type=checkbox] {
+  border: 1px solid #979797;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(4) {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(4) input[type=submit] {
+  display: block;
+  width: 100%;
+  background-color: #4D64FD;
+  color: #FFFFFF;
+  border: 0;
+  padding: 1.2rem 1.6rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__footer .login__principal__grid__form__footer-text {
+  font-size: 1.3rem;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__footer .login__principal__grid__form__footer-text a {
+  color: #4D64FD;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__footer .login__principal__grid__form__footer-text a:hover {
+  text-decoration: underline;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__footer .login__principal__grid__form__footer-link {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  color: #4D64FD;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__footer .login__principal__grid__form__footer-link:hover {
+  text-decoration: underline;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__footer__terms {
+  margin-top: 3rem;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__footer__terms .login__principal__grid__form__footer__terms-text {
+  font-size: 1rem;
+  color: #9c9c9c;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__footer__terms .login__principal__grid__form__footer__terms-text a {
+  color: #4D64FD;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__footer__terms .login__principal__grid__form__footer__terms-text a:hover {
+  text-decoration: underline;
 }

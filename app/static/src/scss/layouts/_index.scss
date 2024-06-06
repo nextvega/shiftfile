@@ -59,6 +59,9 @@
                             color: $primary;
                             text-decoration: underline;
                         }
+                        .bi::before{
+                            vertical-align: -.15em;
+                        }
                     }
                 }
             }
@@ -87,6 +90,10 @@
                                 color: $primary;
                                 text-decoration: underline;
                             }
+
+                            .bi::before{
+                                vertical-align: -.15em;
+                            }
                         }
                     }
                 }
@@ -101,7 +108,7 @@
 
                     .header__principal__grid__right__login__list-button:first-of-type{
                         display: block;
-                        padding: 0.85rem 1.6rem;
+                        padding: 0.6rem 1.6rem;
                         background-color: $primary;
                         color: $white;
                         font-weight: 600;
@@ -120,7 +127,7 @@
 
                     .header__principal__grid__right__login__list-button:last-of-type{
                         display: block;
-                        padding: 0.85rem 1.6rem;
+                        padding: 0.6rem 1.6rem;
                         background-color: transparent;
                         color: $primary;
                         font-weight: 600;
