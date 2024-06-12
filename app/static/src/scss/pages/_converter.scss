@@ -76,7 +76,8 @@
         align-items: center;
         justify-content: center;
         height: 360px;
-
+        border: 2px dashed #cfcfcf;
+        transition: all 0.2s ease;
         .upload__converter__grid__file{
             display: flex;
             flex-direction: column;
@@ -119,4 +120,10 @@
         }
     }
 
+}
+
+.dropzone.dragover {
+    background-color: #f0f0f0; /* Cambia el fondo cuando se está arrastrando un archivo sobre él */
+    border: 2px dashed $primary;
+    transition: all 0.2s ease;
 }
