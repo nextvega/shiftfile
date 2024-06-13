@@ -60,12 +60,12 @@ def converter(request):
                     destination.write(chunk)
 
             word_file_path = convert_to_word(file_path, token)
+            request.session['token'] = token
+            request.session['format'] = '.docx'
+            request.session['name_file'] = uploaded_file.name
             return JsonResponse(
                 {
                     'redirect_url': reverse('download', kwargs={'token': token}),
-                    'format' : '.docx',
-                    'token': token,
-                    'name_file': uploaded_file.name
                 }
             )
         else:
@@ -76,26 +76,19 @@ def converter(request):
         'title': 'File converter'
     })
 
-
 # Compresor de archivos
 def compress(request):
     return render(request, 'pages/services/compress.html',{
         'title': 'File Compress'
     })
 
-
-
-
-
 # Descarga de archivos del servidor
 def download(request, token=None):
-    print(token)
     if token:
         general_name = token + '.docx'
         path_folder = os.path.join(settings.BASE_DIR, 'documents', 'word')
         path_exists = os.path.join(path_folder, general_name)
         value = os.path.exists(path_exists)
-        
         if value:
             if request.method == 'POST':
                 data = json.loads(request.body.decode('utf-8'))
@@ -127,6 +120,44 @@ def download(request, token=None):
             return redirect('converter')
     else:
         return redirect('converter')
+
+# Eliminar los archivos del servidor
+def delete_file(request):
+    if request.method == 'POST':
+        print('borrando archivos ......')
+
+        body_unicode = request.body.decode('utf-8')
+        body = json.loads(body_unicode)
+        
+        # Obtener el token del cuerpo de la solicitud
+        token = body.get('token')
+
+        general_name = token + '.docx'
+        path_folder = os.path.join(settings.BASE_DIR, 'documents', 'word')
+        path_exists = os.path.join(path_folder, general_name)
+        value = os.path.exists(path_exists)
+        if value:
+
+            general_name2 = token + '.pdf'
+            path_folder2 = os.path.join(settings.BASE_DIR, 'documents')
+            path_exists2 = os.path.join(path_folder2, general_name2)
+
+            os.remove(path_exists)
+            os.remove(path_exists2)
+
+            if 'token' in request.session:
+                del request.session['token']
+
+            if 'format' in request.session:
+                del request.session['format']
+
+            if 'name_file' in request.session:
+                del request.session['name_file']
+
+        return redirect('converter')
+
+    return redirect('converter')
+
 
 
 # views login's

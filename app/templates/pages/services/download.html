@@ -161,16 +161,22 @@
             </main>
         </div>
     </section>
-{% endblock %}
 
-
-{% block scripts %}
 
     <script>
-        var tokenDocument = localStorage.getItem('token');
+        var tokenDocument = "{{ request.session.token }}";
+        var formatDocument = "{{ request.session.format }}";
+        var nameDocument = "{{ request.session.name_file }}";
         var csrf = '{% csrf_token %}'
         var router = "{% url 'download' token='__token__' %}".replace('__token__', tokenDocument);
+        var routerDelete = "{% url 'delete_file' %}";
     </script>
     <script src="{% static 'build/js/download.js'%}"></script>
+
+
+    {% endblock %}
+
+
+    {% block scripts %}
 
 {% endblock %}

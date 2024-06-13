@@ -276,6 +276,12 @@
 
 
     {% endblock %}
-    
+    <script>
+        var routerDelete = "{% url 'delete_file' %}";
+        var tokenDocument = "{{ request.session.token }}";
+        var formatDocument = "{{ request.session.format }}";
+        var nameDocument = "{{ request.session.name_file }}";
+    </script>
+    <script src="{% static 'build/js/delete.js'%}"></script>
 </body>
 </html>

@@ -17,9 +17,6 @@ document.addEventListener("DOMContentLoaded", function() {
           xhr.onload = function () {
               if (xhr.status === 200) {
                 var response = JSON.parse(xhr.responseText);
-                localStorage.setItem('token', response.token);
-                localStorage.setItem('format', response.format);
-                localStorage.setItem('name_file', response.name_file);
                 const Toast = Swal.mixin({
                   toast: true,
                   position: "top-end",
@@ -89,9 +86,6 @@ document.addEventListener("DOMContentLoaded", function() {
     xhr.onload = function () {
         if (xhr.status === 200) {
           var response = JSON.parse(xhr.responseText);
-          localStorage.setItem('token', response.token);
-          localStorage.setItem('format', response.format);
-          localStorage.setItem('name_file', response.name_file);
           const Toast = Swal.mixin({
             toast: true,
             position: "top-end",

@@ -1,16 +1,10 @@
 console.log('Ejecutando..');
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
-  var tokenDocument = localStorage.getItem('token');
-  var formatDocument = localStorage.getItem('format');
-  var nameDocument = localStorage.getItem('name_file');
   let downloadButton = document.getElementById('downloadFile')
   
-
-  window.addEventListener('beforeunload', function (event) {
-    localStorage.removeItem('urlWord');
-    localStorage.removeItem('token');
-  });
-
   function getCookie(name) {
     const value = `; ${document.cookie}`;
     const parts = value.split(`; ${name}=`);
