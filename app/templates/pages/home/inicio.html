@@ -12,7 +12,7 @@
 
         <div class="content">
             <main class="welcome__slogan__principal">
-                <h1 class="welcome__slogan__principal-title">Interact with PDFs <span>smarter</span>  with AI</h1>
+                <h1 class="welcome__slogan__principal-title">Interact with IMG's <span>smarter</span>  with AI</h1>
                 <p class="welcome__slogan__principal-description">
                     Empower PDF workflow with HiPDF's AI magic. Effortlessly chat, summarize, read, convert, edit, and more.
                     Your PDF tasks, simplified and smarter, at your service.
@@ -31,7 +31,7 @@
                     </div>
 
                     <div class="popular__tools__grid__header__explore">
-                        <a class="popular__tools__grid__header__explore-link" href="#">Explore All Tools <i class="bi bi-chevron-right"></i></a>
+                        <a class="popular__tools__grid__header__explore-link" href="{% url 'tools'%}">Explore All Tools <i class="bi bi-chevron-right"></i></a>
                     </div>
                 </header>
 
@@ -39,12 +39,12 @@
                     <article class="popular__tools__grid__body__tool">
                         <a href="#" class="popular__tools__grid__body__tool__link">
                             <picture class="popular__tools__grid__body__tool__link__picture">
-                                <img class="popular__tools__grid__body__tool__link__picture-img" src="{% static 'build/img/read.webp'%}" alt="Compress PDF">
+                                <img class="popular__tools__grid__body__tool__link__picture-img" src="{% static 'build/img/text.svg'%}" alt="Compress PDF">
                             </picture>
 
                             <div class="popular__tools__grid__body__tool__link__description">
-                                <h3 class="popular__tools__grid__body__tool__link__description-title">AI Read PDF</h3>
-                                <p class="popular__tools__grid__body__tool__link__description-more">Al chatting, summarizing, explaining, rewriting your PDFs.</p>
+                                <h3 class="popular__tools__grid__body__tool__link__description-title">TXT to PDF</h3>
+                                <p class="popular__tools__grid__body__tool__link__description-more">Convert TXT to PDF online for free.</p>
                             </div>
                         </a>
                     </article>
@@ -52,31 +52,18 @@
                     <article class="popular__tools__grid__body__tool">
                         <a href="#" class="popular__tools__grid__body__tool__link">
                             <picture class="popular__tools__grid__body__tool__link__picture">
-                                <img class="popular__tools__grid__body__tool__link__picture-img" src="{% static 'build/img/detector.webp'%}" alt="AI Detector">
+                                <img class="popular__tools__grid__body__tool__link__picture-img" src="{% static 'build/img/jpg.svg'%}" alt="AI Detector">
                             </picture>
 
                             <div class="popular__tools__grid__body__tool__link__description">
-                                <h3 class="popular__tools__grid__body__tool__link__description-title">AI Detector</h3>
-                                <p class="popular__tools__grid__body__tool__link__description-more">Detect AI-written content with ease.</p>
+                                <h3 class="popular__tools__grid__body__tool__link__description-title">JPG to PDF</h3>
+                                <p class="popular__tools__grid__body__tool__link__description-more">Convert JPG, PNG, BMP, GIF and TIFF images to PDF.</p>
                             </div>
                         </a>
                     </article>
 
                     <article class="popular__tools__grid__body__tool">
-                        <a href="#" class="popular__tools__grid__body__tool__link">
-                            <picture class="popular__tools__grid__body__tool__link__picture">
-                                <img class="popular__tools__grid__body__tool__link__picture-img" src="{% static 'build/img/compress.svg'%}" alt="Compress PDF">
-                            </picture>
-
-                            <div class="popular__tools__grid__body__tool__link__description">
-                                <h3 class="popular__tools__grid__body__tool__link__description-title">Compress PDF</h3>
-                                <p class="popular__tools__grid__body__tool__link__description-more">The easiest way to reduce PDF size online.</p>
-                            </div>
-                        </a>
-                    </article>
-
-                    <article class="popular__tools__grid__body__tool">
-                        <a href="#" class="popular__tools__grid__body__tool__link">
+                        <a href="{% url 'converter' %}" class="popular__tools__grid__body__tool__link">
                             <picture class="popular__tools__grid__body__tool__link__picture">
                                 <img class="popular__tools__grid__body__tool__link__picture-img" src="{% static 'build/img/word.svg'%}" alt="Compress PDF">
                             </picture>
@@ -104,12 +91,12 @@
                     <article class="popular__tools__grid__body__tool">
                         <a href="#" class="popular__tools__grid__body__tool__link">
                             <picture class="popular__tools__grid__body__tool__link__picture">
-                                <img class="popular__tools__grid__body__tool__link__picture-img" src="{% static 'build/img/pdf.svg'%}" alt="Compress PDF">
+                                <img class="popular__tools__grid__body__tool__link__picture-img" src="{% static 'build/img/compress2.svg'%}" alt="Compress PDF">
                             </picture>
 
                             <div class="popular__tools__grid__body__tool__link__description">
-                                <h3 class="popular__tools__grid__body__tool__link__description-title">PDF to PPT</h3>
-                                <p class="popular__tools__grid__body__tool__link__description-more">Convert PDF to Powerpoint online.</p>
+                                <h3 class="popular__tools__grid__body__tool__link__description-title">Compress Image</h3>
+                                <p class="popular__tools__grid__body__tool__link__description-more">Free and online photo compressor.</p>
                             </div>
                         </a>
                     </article>
@@ -117,12 +104,25 @@
                     <article class="popular__tools__grid__body__tool">
                         <a href="#" class="popular__tools__grid__body__tool__link">
                             <picture class="popular__tools__grid__body__tool__link__picture">
-                                <img class="popular__tools__grid__body__tool__link__picture-img" src="{% static 'build/img/excel.svg'%}" alt="Compress PDF">
+                                <img class="popular__tools__grid__body__tool__link__picture-img" src="{% static 'build/img/delete.svg'%}" alt="Compress PDF">
                             </picture>
 
                             <div class="popular__tools__grid__body__tool__link__description">
-                                <h3 class="popular__tools__grid__body__tool__link__description-title">Excel to PDF</h3>
-                                <p class="popular__tools__grid__body__tool__link__description-more">Easily Convert Excel spreadsheet to PDF.</p>
+                                <h3 class="popular__tools__grid__body__tool__link__description-title">Delete Pages PDF</h3>
+                                <p class="popular__tools__grid__body__tool__link__description-more">Delete unneeded pages from PDF.</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="popular__tools__grid__body__tool">
+                        <a href="" class="popular__tools__grid__body__tool__link">
+                            <picture class="popular__tools__grid__body__tool__link__picture">
+                                <img class="popular__tools__grid__body__tool__link__picture-img" src="{% static 'build/img/unlock.svg'%}" alt="Compress PDF">
+                            </picture>
+
+                            <div class="popular__tools__grid__body__tool__link__description">
+                                <h3 class="popular__tools__grid__body__tool__link__description-title">Unlock PDF</h3>
+                                <p class="popular__tools__grid__body__tool__link__description-more">Unlock your PDF file with the best PDF password remover.</p>
                             </div>
                         </a>
                     </article>
@@ -144,7 +144,7 @@
         </div>
     </section>
 
-    <section class="featured__tools">
+    <!-- <section class="featured__tools">
         <section class="content">
             <div class="featured__tools__nav">
                 <div class="featured__tools__nav-start">
@@ -256,8 +256,123 @@
             </li>
         </ul>
 
-    </section>
+    </section> -->
     
+    <section class="galery__tools">
+        <div class="content">
+            <main class="galery__tools__grid">
+                <header class="galery__tools__grid__header">
+                    <h1 class="galery__tools__grid__header-title">Free online <span>Files</span> solution for everyone.</h1>
+                    <p class="galery__tools__grid__header-text">Convert, compress, edit, and more. Do smarter with AI. </p>
+                </header>
+
+                <section class="galery__tools__grid__body">
+                    <ul class="galery__tools__grid__body__list">
+                        <li class="galery__tools__grid__body__list__item galery__tools__grid__body__list__item-active">
+                            <p class="galery__tools__grid__body__list__item-active__title">Students</p>
+
+                            <section class="galery__tools__grid__body__list__item-active__main">
+                                <div class="galery__tools__grid__body__list__item-active__main__left">
+                                    <h3 class="galery__tools__grid__body__list__item-active__main__left-title">Students</h3>
+                                    <p class="galery__tools__grid__body__list__item-active__main__left-text">
+                                        Convert PDF documents in class to Word. Edit and extract content more easily. Manage class handouts, research papers, and reports better.
+                                    </p>
+                                </div>
+
+                                <div class="galery__tools__grid__body__list__item-active__main__right">
+                                    <a class="galery__tools__grid__body__list__item-active__main__right-link" href=""> Convert to Word Now <i class="bi bi-chevron-compact-right"></i></a>
+                                </div>
+                            </section>
+                        </li>
+
+                        <li class="galery__tools__grid__body__list__item">
+                            <p class="galery__tools__grid__body__list__item__title">Education</p>
+
+                            <section class="galery__tools__grid__body__list__item-active__main">
+                                <div class="galery__tools__grid__body__list__item-active__main__left">
+                                    <h3 class="galery__tools__grid__body__list__item-active__main__left-title">Students</h3>
+                                    <p class="galery__tools__grid__body__list__item-active__main__left-text">
+                                        Convert PDF documents in class to Word. Edit and extract content more easily. Manage class handouts, research papers, and reports better.
+                                    </p>
+                                </div>
+
+                                <div class="galery__tools__grid__body__list__item-active__main__right">
+                                    <a class="galery__tools__grid__body__list__item-active__main__right-link" href=""> Convert to Word Now <i class="bi bi-chevron-compact-right"></i></a>
+                                </div>
+                            </section>
+                        </li>
+
+                        <li class="galery__tools__grid__body__list__item">
+                            <p class="galery__tools__grid__body__list__item__title">IT</p>
+
+                            <section class="galery__tools__grid__body__list__item-active__main">
+                                <div class="galery__tools__grid__body__list__item-active__main__left">
+                                    <h3 class="galery__tools__grid__body__list__item-active__main__left-title">Students</h3>
+                                    <p class="galery__tools__grid__body__list__item-active__main__left-text">
+                                        Convert PDF documents in class to Word. Edit and extract content more easily. Manage class handouts, research papers, and reports better.
+                                    </p>
+                                </div>
+
+                                <div class="galery__tools__grid__body__list__item-active__main__right">
+                                    <a class="galery__tools__grid__body__list__item-active__main__right-link" href=""> Convert to Word Now <i class="bi bi-chevron-compact-right"></i></a>
+                                </div>
+                            </section>
+                        </li>
+
+                        <li class="galery__tools__grid__body__list__item">
+                            <p class="galery__tools__grid__body__list__item__title">Jobs</p>
+
+                            <section class="galery__tools__grid__body__list__item-active__main">
+                                <div class="galery__tools__grid__body__list__item-active__main__left">
+                                    <h3 class="galery__tools__grid__body__list__item-active__main__left-title">Students</h3>
+                                    <p class="galery__tools__grid__body__list__item-active__main__left-text">
+                                        Convert PDF documents in class to Word. Edit and extract content more easily. Manage class handouts, research papers, and reports better.
+                                    </p>
+                                </div>
+
+                                <div class="galery__tools__grid__body__list__item-active__main__right">
+                                    <a class="galery__tools__grid__body__list__item-active__main__right-link" href=""> Convert to Word Now <i class="bi bi-chevron-compact-right"></i></a>
+                                </div>
+                            </section>
+                        </li>
+                    </ul>
+                </section>
+            </main>
+
+            <section class="galery__tools__grid__more">
+                <h3 class="galery__tools__grid__more-title">
+                    Enhance your <span>PDF</span>  experience with <span>more</span> .
+                </h3>
+
+                <a class="galery__tools__grid__more-link" href="#">Explore All Tools <i class="bi bi-chevron-compact-right"></i></a>
+            </section>
+        </div>
+    </section>
+
+    <section class="fingertips__more">
+        <div class=content>
+            <main>
+                <header>
+                    <h3>Handy PDF tools right at your fingertips.</h3>
+                </header>
+
+                <section>
+                    <article>
+                        <a href="">
+                            <picture class="">
+                                <img class="" src="{% static 'build/img/text.svg'%}" alt="Compress PDF">
+                            </picture>
+
+                            <div class="">
+                                <h3 class="">TXT to PDF</h3>
+                            </div>
+                        </a>
+                    </article>
+                </section>
+            </main>
+        </div>
+    </section>
+
     <section class="skills__file">
         <div class="content">
             <main class="skills__file__grid">

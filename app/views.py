@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from django.http import JsonResponse, HttpResponse
+from django.http import JsonResponse
 from django.urls import reverse
 from django.conf import settings
 from pdf2docx import Converter
@@ -9,6 +9,7 @@ import os
 import uuid
 import json
 import base64
+
 
 # convertidores
 def convert_to_word(pdf_file, name):
@@ -42,7 +43,6 @@ def tools(request):
 # Receptores De Archivos
 def converter(request):
     if request.method == 'POST' and request.FILES.get('fileInput'):
-
         uploaded_file = request.FILES['fileInput']
         documents_folder = os.path.join(settings.BASE_DIR, 'documents')
         token = uuid.uuid4().hex
@@ -54,20 +54,20 @@ def converter(request):
 
             file_path = os.path.join(documents_folder, token + '.pdf')
 
-
             with open(file_path, 'wb') as destination:
                 for chunk in uploaded_file.chunks():
                     destination.write(chunk)
-
-            word_file_path = convert_to_word(file_path, token)
-            request.session['token'] = token
-            request.session['format'] = '.docx'
-            request.session['name_file'] = uploaded_file.name
-            return JsonResponse(
-                {
-                    'redirect_url': reverse('download', kwargs={'token': token}),
-                }
-            )
+            
+                word_file_path = convert_to_word(file_path, token)
+                request.session['token'] = token
+                request.session['format'] = '.docx'
+                request.session['name_file'] = uploaded_file.name
+                return JsonResponse(
+                    {
+                        'redirect_url': reverse('download', kwargs={'token': token}),
+                    }
+                )
+            
         else:
             return JsonResponse({'error': 'El archivo no es un PDF'}, status=404)
 
@@ -129,32 +129,34 @@ def delete_file(request):
         body_unicode = request.body.decode('utf-8')
         body = json.loads(body_unicode)
         
-        # Obtener el token del cuerpo de la solicitud
         token = body.get('token')
+        name_file = body.get('name_file')
+        format = body.get('format')
 
-        general_name = token + '.docx'
-        path_folder = os.path.join(settings.BASE_DIR, 'documents', 'word')
-        path_exists = os.path.join(path_folder, general_name)
-        value = os.path.exists(path_exists)
-        if value:
+        if format == '.docx':
+            general_name = token + '.docx'
+            path_folder = os.path.join(settings.BASE_DIR, 'documents', 'word')
+            path_exists = os.path.join(path_folder, general_name)
+            value = os.path.exists(path_exists)
+            if value:
 
-            general_name2 = token + '.pdf'
-            path_folder2 = os.path.join(settings.BASE_DIR, 'documents')
-            path_exists2 = os.path.join(path_folder2, general_name2)
+                general_name2 = token + '.pdf'
+                path_folder2 = os.path.join(settings.BASE_DIR, 'documents')
+                path_exists2 = os.path.join(path_folder2, general_name2)
 
-            os.remove(path_exists)
-            os.remove(path_exists2)
+                os.remove(path_exists)
+                os.remove(path_exists2)
 
-            if 'token' in request.session:
-                del request.session['token']
+                if 'token' in request.session:
+                    del request.session['token']
 
-            if 'format' in request.session:
-                del request.session['format']
+                if 'format' in request.session:
+                    del request.session['format']
 
-            if 'name_file' in request.session:
-                del request.session['name_file']
+                if 'name_file' in request.session:
+                    del request.session['name_file']
 
-        return redirect('converter')
+            return redirect('converter')
 
     return redirect('converter')
 

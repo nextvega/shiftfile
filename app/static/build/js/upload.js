@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
                   icon: "info",
                   title: "Uploading File..."
                 }).then((result) =>{
+                  console.log(response.redirect_url);
                   window.location.href = response.redirect_url;
                 })
               } else {

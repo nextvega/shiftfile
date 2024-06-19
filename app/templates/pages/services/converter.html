@@ -55,6 +55,7 @@
                         <form id="uploadForm" action="{ url 'converter'}" method="post" enctype="multipart/form-data">
                             {% csrf_token %}
                             <input type="file" id="fileInput" name="fileInput" value="">
+                            <input readonly type="text" id="formatInput" name="formatInput" value=".docx">
                         </form>
                         <p class="upload__converter__grid__file__button-text">or drop files here</p>
                     </div>

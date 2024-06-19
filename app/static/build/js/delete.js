@@ -9,9 +9,11 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     const csrftoken = getCookie('csrftoken')
 
-    function getDeleteFile(tokenID){
+    function getDeleteFile(tokenID, name_fileID, formatID){
         var data = {
-        token: tokenID,
+            token: tokenID,
+            name_file: name_fileID,
+            format: formatID
         };
 
         var xhr = new XMLHttpRequest();
@@ -30,15 +32,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (esChrome) {
         window.addEventListener('unload', function(event) {
-            getDeleteFile(tokenDocument);
+            getDeleteFile(tokenDocument, nameDocument, formatDocument);
         });
     } else if (esFirefox) {
         window.addEventListener('beforeunload', function (event) {
-            getDeleteFile(tokenDocument);
+            getDeleteFile(tokenDocument, nameDocument, formatDocument);
         });
     } else {
         window.addEventListener('unload', function(event) {
-            getDeleteFile(tokenDocument);
+            getDeleteFile(tokenDocument, nameDocument, formatDocument);
         });
     }
 
