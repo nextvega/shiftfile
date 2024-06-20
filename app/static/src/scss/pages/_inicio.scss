@@ -539,8 +539,8 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    min-height: 74rem;
-    max-height: 74rem;
+    min-height: 71.5rem;
+    max-height: 71.5rem;
     padding: 2rem 0;
     padding-bottom: 0;
     .galery__tools__grid{
@@ -647,6 +647,7 @@
                         width: 100%;
                         z-index: -1;
                         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0)), url("https://images.hipdf.com/images2024/homepage/pic-person-1.png");
+                        background: var(--pseudo-background-color);
                         background-position: center;
                         background-repeat: no-repeat;
                         background-size: cover;
@@ -655,7 +656,14 @@
                         border-radius: 1.5rem;
                     }
 
-                    .galery__tools__grid__body__list__item-active__title{
+                    .galery__tools__grid__body__list__item{
+                        display: none;
+                    }
+                    .text_none{
+                        display: none;
+                    }
+
+                    .galery__tools__grid__body__list__item__title{
                         display: none;
                     }
 
@@ -691,6 +699,11 @@
                                 border-radius: .8rem;
                                 width: 100%;
                                 font-weight: 500;
+                                transition: all 0.3s ease;
+                                &:hover{
+                                    background-color: $white;
+                                    color: $primary;
+                                }
                             }
                         }
                     }
@@ -727,6 +740,97 @@
             border-radius: 0.6rem;
             font-weight: 600;
             font-size: 1.5rem;
+        }
+    }
+}
+
+.fingertips__more{
+    max-height: 50rem;
+    min-height: 50rem;
+    position: relative;
+    padding: 5rem 0;
+    padding-bottom: 0;
+    margin-bottom: -2rem;
+    overflow: hidden;
+    &::after{
+        content: "";
+        display: block;
+        top: 0px;
+        width: 100%;
+        z-index: 1;
+        background: linear-gradient(256deg,rgba(255,255,255,0.24) 3.41%,rgba(255,255,255,0) 69.7%),linear-gradient(118deg,rgba(209,169,255,0.1) -4.36%,rgba(209,169,255,0) 34.61%),linear-gradient(180deg,rgba(193,222,255,0.1) -2.58%,rgba(222,248,255,0) 69.67%),linear-gradient(199deg,rgba(165,197,255,0.1) 7.96%,rgba(185,221,255,0.1) 53.71%,rgba(220,240,255,0.1) 92.11%);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        position: absolute;
+    }
+    .fingertips__more__grid{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+        .fingertips__more__grid__header{
+            margin-bottom: 5rem;
+            .fingertips__more__grid__header-title{
+                font-size: 4rem;
+                font-weight: 700;
+                text-align: left;
+                span{
+                    color: $primary;
+                    text-transform: capitalize;
+                }
+            }
+        }
+        .fingertips__more__grid__body{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            align-items: center;
+            gap: 5rem;
+            .fingertips__more__grid__body__item{
+                background-color: $white;
+                border-radius: 1.5rem;
+                overflow: hidden;
+                box-shadow: 0px 3.32px 28.05px 0px rgba(0,83,207,.1490196078);
+                .fingertips__more__grid__body__item__link{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                    .fingertips__more__grid__body__item__link__picture{
+                        .fingertips__more__grid__body__item__link__picture-img{
+                            width: 25rem;
+                            margin: 0 auto;
+                            transition: all 0.3s ease;
+                            &:hover{
+                                transform: scale(1.1);
+                            }
+
+                        }
+                    }
+
+
+                    .fingertips__more__grid__body__item__link__title{
+                        margin-top: -9rem;
+                        padding: 2rem 0;
+                        position: relative;
+                        z-index: 10;
+                        .fingertips__more__grid__body__item__link__title-text{
+                            text-align: center;
+                            font-size: 2rem;
+                            font-weight: 600;
+                            span{
+                                background: linear-gradient(90deg, #3D47FC 0%, #9936FC 56.5%, #B228FC 100%);
+                                background-clip: border-box;
+                                background-clip: border-box;
+                                font-weight: 700;
+                                background-clip: text;
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: rgba(0, 0, 0, 0);
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -1002,7 +1106,6 @@
         }
     }
 }
-
 
 .popular__tools-alternative{
     background-color: transparent;
