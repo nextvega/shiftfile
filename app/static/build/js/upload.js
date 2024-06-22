@@ -1,4 +1,3 @@
-console.log('Ejecutando..');
 document.addEventListener("DOMContentLoaded", function() {
   const dropzones = document.querySelectorAll('.upload__converter__grid');
   const fileInput = document.getElementById('fileInput');

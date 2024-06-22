@@ -1,7 +1,3 @@
-console.log('Ejecutando..');
-
-
-
 document.addEventListener("DOMContentLoaded", function() {
   let downloadButton = document.getElementById('downloadFile')
   

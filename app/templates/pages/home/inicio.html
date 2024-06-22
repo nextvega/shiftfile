@@ -37,7 +37,7 @@
 
                 <div class="popular__tools__grid__body">
                     <article class="popular__tools__grid__body__tool">
-                        <a href="#" class="popular__tools__grid__body__tool__link">
+                        <a href="{%url 'converter_txt' %}" class="popular__tools__grid__body__tool__link">
                             <picture class="popular__tools__grid__body__tool__link__picture">
                                 <img class="popular__tools__grid__body__tool__link__picture-img" src="{% static 'build/img/text.svg'%}" alt="Compress PDF">
                             </picture>
@@ -268,7 +268,7 @@
 
                 <section class="galery__tools__grid__body">
                     <ul class="galery__tools__grid__body__list">
-                        <li class="galery__tools__grid__body__list__item ">
+                        <li class="galery__tools__grid__body__list__item galery__tools__grid__body__list__item-active">
                             <p class="galery__tools__grid__body__list__item__title">Students</p>
 
                             <section class="galery__tools__grid__body__list__item-active__main">
@@ -285,7 +285,7 @@
                             </section>
                         </li>
 
-                        <li class="galery__tools__grid__body__list__item galery__tools__grid__body__list__item-active">
+                        <li class="galery__tools__grid__body__list__item ">
                             <p class="galery__tools__grid__body__list__item__title">Education</p>
 
                             <section class="galery__tools__grid__body__list__item-active__main">
@@ -335,6 +335,7 @@
                                 </div>
                             </section>
                         </li>
+                        
                     </ul>
                 </section>
             </main>
@@ -413,6 +414,8 @@
                             </div>
                         </a>
                     </article>
+
+
                 </section>
             </main>
         </div>

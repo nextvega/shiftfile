@@ -7,12 +7,16 @@ urlpatterns =[
     path('all-tools/', views.tools, name="tools"),
     # services
     path('all-tools/converter/', views.converter, name="converter"),
+    path('all-tools/converter_txt/', views.converter_txt, name="converter_txt"),
     path('all-tools/compress/', views.compress, name="compress"),
 
 
     # files management
     path('all-tools/download/', views.download, name="download"),
     path('all-tools/download/<str:token>/', views.download, name="download"),
+    path('all-tools/download/<str:token>/<str:format>', views.download, name="download"),
+
+    
     path('all-tools/delete_file/', views.delete_file, name="delete_file"),
 
 

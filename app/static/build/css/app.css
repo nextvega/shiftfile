@@ -1107,7 +1107,7 @@ body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
   margin-bottom: 5rem;
 }
 .fingertips__more .fingertips__more__grid .fingertips__more__grid__header .fingertips__more__grid__header-title {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 700;
   text-align: left;
 }

@@ -759,6 +759,7 @@
         width: 100%;
         z-index: 1;
         background: linear-gradient(256deg,rgba(255,255,255,0.24) 3.41%,rgba(255,255,255,0) 69.7%),linear-gradient(118deg,rgba(209,169,255,0.1) -4.36%,rgba(209,169,255,0) 34.61%),linear-gradient(180deg,rgba(193,222,255,0.1) -2.58%,rgba(222,248,255,0) 69.67%),linear-gradient(199deg,rgba(165,197,255,0.1) 7.96%,rgba(185,221,255,0.1) 53.71%,rgba(220,240,255,0.1) 92.11%);
+        // background-image: url("../img/banner-bg.webp");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -773,7 +774,7 @@
         .fingertips__more__grid__header{
             margin-bottom: 5rem;
             .fingertips__more__grid__header-title{
-                font-size: 4rem;
+                font-size: 3.5rem;
                 font-weight: 700;
                 text-align: left;
                 span{
