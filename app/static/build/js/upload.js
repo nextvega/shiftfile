@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 console.log(xhr.status);
                 Swal.fire({
                   title: "Se produjo un Error",
-                  text: 'No se admiten archivos diferentes al formato .pdf',
+                  text: 'No se admiten archivos diferentes al formato destino',
                   icon: "error"
                 });
               }
@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function() {
           console.log(xhr.status);
           Swal.fire({
             title: "Se produjo un Error",
-            text: 'No se admiten archivos diferentes al formato .pdf',
+            text: 'No se admiten archivos diferentes al formato destino',
             icon: "error"
           });
         }

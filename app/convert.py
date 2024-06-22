@@ -13,8 +13,6 @@ def convertPDF_to_word(pdf_file, name):
     return word_file
 
 # convertidor TXT > PDF
-from reportlab.lib.pagesizes import letter
-from reportlab.pdfgen import canvas
 from fpdf import FPDF
 def convertTXT_to_pdf(txt_file, name):
     pdf_folder = os.path.join(settings.BASE_DIR, 'documents/pdf')

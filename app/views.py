@@ -53,6 +53,15 @@ def converter(request):
             request.session['token'] = token
             request.session['format'] = '.docx'
             request.session['name_file'] = uploaded_file.name
+
+            if 'tokens' not in request.session:
+                request.session['tokens'] = []
+            else:
+                tokens = request.session['tokens']
+
+                if token not in tokens:
+                    tokens.append(token)
+                    request.session['tokens'] = tokens
             return JsonResponse(
                 {
                     'redirect_url': reverse('download', kwargs={'token': token, 'format': '.docx'}),
@@ -88,6 +97,15 @@ def converter_txt(request):
             request.session['token'] = token
             request.session['format'] = '.pdf'
             request.session['name_file'] = uploaded_file.name
+
+            if 'tokens' not in request.session:
+                request.session['tokens'] = []
+            else:
+                tokens = request.session['tokens']
+
+                if token not in tokens:
+                    tokens.append(token)
+                    request.session['tokens'] = tokens
             return JsonResponse(
                 {
                     'redirect_url': reverse('download', kwargs={'token': token, 'format': '.pdf'}),
@@ -126,6 +144,7 @@ def download(request, token=None, format=None):
                 file_name = token + format
                 documents_folder = os.path.join(settings.BASE_DIR, 'documents', format.split('.')[1])
                 file_path = os.path.join(documents_folder, file_name)
+
                 if os.path.exists(file_path):
                     with open(file_path, 'rb') as file:
                         file_content = base64.b64encode(file.read()).decode('utf-8')
@@ -146,40 +165,40 @@ def download(request, token=None, format=None):
 
 def delete_file(request):
     if request.method == 'POST':
-        print('borrando archivos ......')
-
         body_unicode = request.body.decode('utf-8')
         body = json.loads(body_unicode)
-        
         token = body.get('token')
-        name_file = body.get('name_file')
-        format = body.get('format')
 
-        if format == '.docx':
-            general_name = token + '.docx'
-            path_folder = os.path.join(settings.BASE_DIR, 'documents', 'word')
-            path_exists = os.path.join(path_folder, general_name)
-            value = os.path.exists(path_exists)
-            if value:
+        path_folder = os.path.join(settings.BASE_DIR, 'documents')
 
-                general_name2 = token + '.pdf'
-                path_folder2 = os.path.join(settings.BASE_DIR, 'documents')
-                path_exists2 = os.path.join(path_folder2, general_name2)
+        if 'tokens' in request.session:
+            tokens = request.session['tokens']
+            print('borrando archivos ......')
+            print(tokens)
+            try:
+                deleted_files = 0
+            
+                # Recorre todos los archivos y subdirectorios dentro de path_folder
+                for dirpath, _, filenames in os.walk(path_folder):
+                    for filename in filenames:
+                        # Verifica si el nombre del archivo coincide con algún token en la lista
+                        for token in tokens:
+                            if token in filename:
+                                file_path = os.path.join(dirpath, filename)
+                                os.remove(file_path)
+                                deleted_files += 1
+                                
+                            if 'token' in request.session:
+                                del request.session['token']
 
-                os.remove(path_exists)
-                os.remove(path_exists2)
+                            if 'format' in request.session:
+                                del request.session['format']
 
-                if 'token' in request.session:
-                    del request.session['token']
-
-                if 'format' in request.session:
-                    del request.session['format']
-
-                if 'name_file' in request.session:
-                    del request.session['name_file']
-
-            return redirect('converter')
-
+                            if 'name_file' in request.session:
+                                del request.session['name_file']
+        
+            except OSError as e:
+                print(f"No se pudo borrar el archivo {filename}: {e}")
     return redirect('converter')
 
 
