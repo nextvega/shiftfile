@@ -16,4 +16,5 @@ document.addEventListener("DOMContentLoaded", function() {
             i.style.setProperty('--pseudo-background-color', `linear-gradient(to top, rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0)), url("https://images.hipdf.com/images2024/homepage/pic-person-${index+1}.png"`);
         })
     })
+
 });

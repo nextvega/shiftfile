@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function() {
         xhr.setRequestHeader("X-CSRFToken", csrftoken);
         xhr.onload = function () {
             if (xhr.status === 200) {
-                console.log(xhr.responseText);
                 console.log('ejecutado');
             }
         };

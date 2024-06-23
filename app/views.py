@@ -147,6 +147,10 @@ def download(request, token=None, format=None):
 
                 if os.path.exists(file_path):
                     with open(file_path, 'rb') as file:
+                        tokens = request.session['tokens']
+                        if token not in tokens:
+                            tokens.append(token)
+                            request.session['tokens'] = tokens    
                         file_content = base64.b64encode(file.read()).decode('utf-8')
                         response_data = {
                             'file_name': name_file.split('.')[0] + format,
@@ -155,6 +159,13 @@ def download(request, token=None, format=None):
                         return JsonResponse(response_data)
                 else:
                     return JsonResponse({"error": "El archivo no fue encontrado."}, status=404)  
+                
+            tokens = request.session['tokens']
+
+            if token not in tokens:
+                tokens.append(token)
+                request.session['tokens'] = tokens    
+
             return render(request, 'pages/services/download.html',{
                 'title': 'Tools to meet all your needs'
             })
