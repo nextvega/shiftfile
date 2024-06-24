@@ -285,27 +285,46 @@
         document.body.addEventListener('drop', function(e) {
             e.preventDefault(); 
             const files = e.dataTransfer.files;
-            if (files.length > 0) {
-                for (let i = 0; i < files.length; i++) {
-                const file = files[i];
-                if (file.type === 'application/pdf') {
-                    const fileURL = URL.createObjectURL(file);
-                    window.open(fileURL, '_blank');
-                    URL.revokeObjectURL(fileURL);
-                } else {
-                    console.log(`Nombre del archivo: ${file.name}, Tipo: ${file.type}`);
-                }
+
+            const targetElement = e.target;
+
+            console.log(targetElement);
+
+            if (!targetElement.classList.contains('upload__converter__grid') && !targetElement.closest('.upload__converter__grid')) {
+                const files = e.dataTransfer.files;
+                if (files.length > 0) {
+                    for (let i = 0; i < files.length; i++) {
+                        const file = files[i];
+                        if (file.type === 'application/pdf') {
+                            const fileURL = URL.createObjectURL(file);
+                            window.open(fileURL, '_blank');
+                            URL.revokeObjectURL(fileURL);
+                        } else {
+                            console.log(`Nombre del archivo: ${file.name}, Tipo: ${file.type}`);
+                        }
+                    }
                 }
             }
-            });
+        });
 
         document.body.addEventListener('dragover', function(e) {
-            e.preventDefault();
+            const targetElement = e.target;
+
+            // Permitir dragover solo si no es dentro de .upload__converter__grid
+            if (!targetElement.classList.contains('upload__converter__grid') && !targetElement.closest('.upload__converter__grid')) {
+                e.preventDefault();
+            }
         });
 
         document.body.addEventListener('dragenter', function(e) {
-            e.preventDefault();
+            const targetElement = e.target;
+
+            // Permitir dragenter solo si no es dentro de .upload__converter__grid
+            if (!targetElement.classList.contains('upload__converter__grid') && !targetElement.closest('.upload__converter__grid')) {
+                e.preventDefault();
+            }
         });
+
     </script>
     <script src="{% static 'build/js/delete.js'%}"></script>
 </body>

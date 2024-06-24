@@ -8,6 +8,7 @@ urlpatterns =[
     # services
     path('all-tools/converter/', views.converter, name="converter"),
     path('all-tools/converter_txt/', views.converter_txt, name="converter_txt"),
+    path('all-tools/converter_jpg/', views.converter_jpg, name="converter_jpg"),
     path('all-tools/compress/', views.compress, name="compress"),
 
 

@@ -21,19 +21,19 @@
                         </li>
 
                         <li class="router__converter__grid__links__list__item">
-                            <a class="router__converter__grid__links__list__item-link" href="#">TXT to PDF <i class="bi bi-chevron-compact-right"></i></a>
+                            <a class="router__converter__grid__links__list__item-link" href="#">JPG to PDF <i class="bi bi-chevron-compact-right"></i></a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="router__converter__grid__title">
                     <picture class="router__converter__grid__title__picture">
-                        <img class="router__converter__grid__title__picture-img" src="{% static 'build/img/text.svg'%}" alt="pdf converter">
-                        <h1 class="router__converter__grid__title__picture-text">TXT to PDF</h1>
+                        <img class="router__converter__grid__title__picture-img" src="{% static 'build/img/jpg.svg'%}" alt="pdf converter">
+                        <h1 class="router__converter__grid__title__picture-text">JPG to PDF</h1>
                     </picture>
 
                     <p class="router__converter__grid__title-description">
-                        Easily convert TXT to PDF online.
+                        Effortlessly convert your JPG files to PDF with our online converter. Change, transfer, and convert JPGs to PDF for free. 
                     </p>
                 </div>
             </main>
@@ -52,7 +52,7 @@
                         <button class="upload__converter__grid__file__button-click">
                             Choose File
                         </button>
-                        <form id="uploadForm" action="{ url 'converter_txt'}" method="post" enctype="multipart/form-data">
+                        <form id="uploadForm" action="{ url 'converter_jpg'}" method="post" enctype="multipart/form-data">
                             {% csrf_token %}
                             <input type="file" id="fileInput" name="fileInput" value="">
                             <input readonly type="text" id="formatInput" name="formatInput" value=".docx">
@@ -179,7 +179,7 @@
 {% block scripts %}
 
     <script>
-        var router = "{% url 'converter_txt' %}"
+        var router = "{% url 'converter_jpg' %}"
     </script>
     <script src="{% static 'build/js/upload.js'%}"></script>
 

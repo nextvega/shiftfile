@@ -81,7 +81,6 @@ def converter_txt(request):
         uploaded_file = request.FILES['fileInput']
         documents_folder = os.path.join(settings.BASE_DIR, 'documents')
         token = uuid.uuid4().hex
-        print(uploaded_file.content_type)
         if uploaded_file.content_type == 'text/plain':
 
             if not os.path.exists(documents_folder):
@@ -117,6 +116,16 @@ def converter_txt(request):
 
     return render(request, 'pages/services/tools/converter_txt.html',{
         'title': 'File converter'
+    })
+
+def converter_jpg(request):
+    if request.method == 'POST' and request.FILES.get('fileInput'):
+        uploaded_file = request.FILES['fileInput']
+        documents_folder = os.path.join(settings.BASE_DIR, 'documents')
+        token = uuid.uuid4().hex
+        print(uploaded_file.content_type)
+    return render(request, 'pages/services/tools/converter_jpg.html',{
+        'title': 'File Converter'
     })
 
 def compress(request):
