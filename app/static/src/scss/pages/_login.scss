@@ -1,0 +1,236 @@
+.login__principal{
+    // background: linear-gradient(180.46deg,hsla(0,0%,100%,0) -.36%,rgba(247,249,253,.81) 99.61%),linear-gradient(268.63deg,rgba(42,240,228,.22) 1.51%,rgba(140,51,255,.22) 38.82%,rgba(255,39,118,.22) 69.91%,rgba(255,188,15,.22) 101%),#fff;
+    background-size: cover;
+    width: 100%;
+    min-height: 100%;
+    padding-top: 7rem;
+
+    &::after{
+        content: "";
+        display: block;
+        top: -500px;
+        width: 100%;
+        z-index: -1;
+        background-image: url(../img/banner-bg.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        position: absolute;
+        background-color: white;
+        filter: blur(25px);
+    }
+    .login__principal__grid{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 11rem;
+        padding: 6rem 4rem;
+        position: relative;
+        .login__principal__grid__picture{
+            .login__principal__grid__picture-img{
+                max-width: 50rem;
+                min-width: 50rem;
+                transition: all 0.3s ease;
+                &:hover{
+                    transform: scale(0.8);
+                }
+            }
+        }
+
+        .login__principal__grid__form{
+            background-color: $white;
+            padding: 3rem 4rem;
+            max-width: 38rem;
+            min-width: 38rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+            max-height: 59rem;
+            min-height: 59rem;
+            margin: 0 auto;
+            overflow: hidden;
+            .login__principal__grid__form__header{
+
+                .login__principal__grid__form__header-title{
+                    font-weight: 400;
+                    font-size: 2.5rem;
+                    margin-bottom: 2.5rem;
+                }
+
+                .login__principal__grid__form__header__options{
+                    .login__principal__grid__form__header__options-title{
+                        color: #979797;
+                        font-size: 1.2rem;
+                        margin-bottom: 0.5rem;
+                    }
+
+                    .login__principal__grid__form__header__options__list{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 1rem;
+                    }
+                }
+
+                .login__principal__grid__form__header__or{
+                    margin: 0;
+                    padding: 0;
+                    padding: 1rem 0;
+                    padding-top: 0.5rem;
+                    position: relative;
+                    .login__principal__grid__form__header__or-text{
+                        position: relative;
+                        text-align: center;
+                        color: #979797;
+                        font-size: 1.2rem;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            width: 135px;
+                            height: .5px;
+                            background-color: rgba(0, 0, 0, .12);
+                            top: 9.5px; 
+                            left: 0;
+                        }
+
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            width: 135px;
+                            height: .5px;
+                            background-color: rgba(0, 0, 0, .12);
+                            top: 9.5px; 
+                            left: auto;
+                            right: 0;
+                        }
+                    }
+                }
+            }
+
+            .login__principal__grid__form__body{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                .login__principal__grid__form__body__content:nth-child(1),
+                .login__principal__grid__form__body__content:nth-child(2){
+                    padding: 0.8rem 0rem;
+                    padding-right: 1rem;
+                    border-bottom: 1px solid rgba(0, 0, 0, .12);
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    gap: 0.5rem;
+                    input[type='email']{
+                        font-size: 1.4rem;
+                        width: 100%;
+                        border: none;
+                        color: #5a5a5a;
+                        &::placeholder{
+                            font-size: 13.3px;
+                        }
+
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                    input[type='password']{
+                        font-size: 1.4rem;
+                        width: 100%;
+                        border: none;
+                        color: #5a5a5a;
+                        &::placeholder{
+                            font-size: 13.3px;
+                        }
+
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+
+                    .bi{
+                        color: #979797;
+                        font-size: 1.4rem;
+                        cursor: pointer;
+                    }
+                    
+                }
+                .login__principal__grid__form__body__content:nth-child(1){
+                    padding-top: 2rem;
+                }
+                .login__principal__grid__form__body__content:nth-child(2){
+                    padding-top: 2rem;
+                }
+
+                .login__principal__grid__form__body__content:nth-child(3){
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: left;
+                    gap: 0.7rem;
+                    margin-top: 0.5rem;
+                    .login__principal__grid__form__body__content-text{
+                        color: #757575;
+                        font-size: 1.3rem; 
+                    }
+
+                    input[type='checkbox']{
+                        border: 1px solid #979797;
+                    }
+                }
+
+                .login__principal__grid__form__body__content:nth-child(4){
+                    margin-top: 1.5rem;
+                    margin-bottom: 2rem;
+                    input[type='submit']{
+                        display: block;
+                        width: 100%;
+                        background-color: $primary;
+                        color: $white;
+                        border: 0;
+                        padding: 1.2rem 1.6rem;
+                        border-radius: 0.5rem;
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        text-transform: capitalize;
+                    }
+                }
+
+
+            }
+
+            .login__principal__grid__form__footer{
+                .login__principal__grid__form__footer-text{
+                    font-size: 1.3rem;
+                    a{
+                        color: $primary;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                .login__principal__grid__form__footer-link{
+                    display: block;
+                    margin-top: 1rem;
+                    font-size: 1.3rem;
+                    color: $primary;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .login__principal__grid__form__footer__terms{
+                margin-top: 3rem;
+                .login__principal__grid__form__footer__terms-text{
+                    font-size: 1rem;
+                    color: #9c9c9c;
+                    a{
+                        color: $primary;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,129 @@
+.router__converter{
+    padding-top: 10rem;
+    .router__converter__grid{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .router__converter__grid__links{
+            .router__converter__grid__links__list{
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                .router__converter__grid__links__list__item{
+                    .router__converter__grid__links__list__item-link{
+                        &:hover{
+                            text-decoration: underline;
+                            color: $primary;
+                            .bi{
+                                color: $black;
+                            }
+                        }
+                        .bi{
+                            margin-right: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .router__converter__grid__title{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .router__converter__grid__title__picture{
+                display: flex;
+                flex-direction: row;
+                gap: 0.5rem;
+                justify-content: center;
+                align-items: center;
+                .router__converter__grid__title__picture-img{
+                    max-width: 5rem;
+                    min-width: 5rem;
+                    max-height: 5rem;
+                    min-height: 5rem;
+                    object-fit: cover;
+                }
+
+                .router__converter__grid__title__picture-text{
+                    font-size: 2.8rem;
+                    font-weight: 600;
+                    margin: 0;
+                    margin-top: 0.4rem;
+
+                }
+            }
+
+            .router__converter__grid__title-description{
+                font-size: 1.4rem;
+                text-align: center;
+                color: $gray;
+            }
+        }
+    }
+}
+
+.upload__converter{
+    margin-top: 3rem;
+    margin-bottom: -4rem;
+    .upload__converter__grid{
+        background: $white;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 360px;
+        border: 2px dashed #cfcfcf;
+        transition: all 0.2s ease;
+        .upload__converter__grid__file{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 1rem;
+            .upload__converter__grid__file__picture{
+                .upload__converter__grid__file__picture-img{
+                    max-width: 12.8rem;
+                    min-width: 12.8rem;
+                    margin: 0 auto;
+                }
+            }
+
+            .upload__converter__grid__file__button{
+                .upload__converter__grid__file__button-click{
+                    width: 289px;
+                    height: 52px;
+                    background: $primary;
+                    border-radius: 8px;
+                    font-family: "Inter";
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 2rem;
+                    color: #ffffff;
+                    margin-bottom: 1.6rem;
+                    border: none;
+                    position: relative;
+                    z-index: 3;
+                    cursor: pointer;
+                }
+
+                .upload__converter__grid__file__button-text{
+                    font-weight: 400;
+                    font-size: 1.4rem;
+                    color: rgba(0, 0, 0, 0.6);
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+}
+
+.dropzone.dragover {
+    background-color: #f0f0f0; /* Cambia el fondo cuando se está arrastrando un archivo sobre él */
+    border: 2px dashed $primary;
+    transition: all 0.2s ease;
+}

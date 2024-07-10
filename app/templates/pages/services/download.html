@@ -1,0 +1,182 @@
+{% extends 'layouts/index.html' %}
+{% load static %}
+
+
+{% block title %} {{title}} {% endblock %}
+
+
+
+{% block content %}
+
+    <section class="download__file">
+        <div class="content">
+            <main class="download__file__grid">
+                <div class="download__file__grid__header">
+                    <picture class="download__file__grid__header__picture">
+                        <img class="download__file__grid__header__picture-img" src="{% static 'build/img/success.svg'%}" alt="success">
+                    </picture>
+
+                    <h3 class="download__file__grid__header-title">This task has been processed <span>successfully</span> </h3>
+                </div>
+
+
+                <div class="download__file__grid__body">
+                    <ul class="download__file__grid__body__list">
+                        <li class="download__file__grid__body__list__item">
+                            <button class="download__file__grid__body__list__item-button">
+                                <svg data-v-37cc4262="" xmlns="http://www.w3.org/2000/svg" width="25" height="24" fill="none"><path stroke="#4D64FD" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 3 8 12l10 9"></path></svg>
+                            </button>
+                        </li>
+
+                        <li class="download__file__grid__body__list__item">
+                            <button class="download__file__grid__body__list__item-button">
+                                <svg data-v-37cc4262="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path stroke="#fff" stroke-width="2" d="m13 6.5-5.174 3.898"></path><circle cx="6.499" cy="11.5" r="2.5" stroke="#fff" stroke-width="2"></circle><circle cx="16.499" cy="18.5" r="3.5" stroke="#fff" stroke-width="2"></circle><circle cx="15.499" cy="4.5" r="2.5" stroke="#fff" stroke-width="2"></circle><path stroke="#fff" stroke-width="2" d="m9 13 5 4"></path></svg>
+                                <p>Share</p>
+                            </button>
+                        </li>
+
+                        <li class="download__file__grid__body__list__item">
+                            <button class="download__file__grid__body__list__item-button" id="downloadFile">
+                                <svg data-v-37cc4262="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path stroke="#fff" stroke-linejoin="round" stroke-width="2" d="M8.4 9H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-3.4"></path><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v12m0 0 3-3m-3 3-3-3"></path></svg>
+                            </button>
+                        </li>
+
+                        <li class="download__file__grid__body__list__item">
+                            <button class="download__file__grid__body__list__item-button">
+                                <svg data-v-37cc4262="" xmlns="http://www.w3.org/2000/svg" width="25" height="24" fill="none"><g stroke="#4D64FD" stroke-linejoin="round" stroke-width="2" clip-path="url(#a)"><path d="M8.994 16h-1.75l-1.05-.027c-2.363-.25-4.2-2.157-4.2-4.473 0-2.307 1.823-4.21 4.172-4.47A.03.03 0 0 0 6.194 7c0-3.314 2.82-6 6.3-6 2.85 0 5.26 1.803 6.036 4.278.15.475.524.855.995 1.017 2.023.695 3.469 2.54 3.469 4.705 0 2.761-2.35 5-5.25 5h-1.75"></path><path stroke-linecap="round" d="M12.494 22V11m0 0-2.5 2.75m2.5-2.75 2.5 2.75"></path></g><defs><clipPath id="a"><path fill="#fff" d="M.994 0h24v24h-24z"></path></clipPath></defs></svg>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <section class="skills__file">
+        <div class="content">
+            <main class="skills__file__grid">
+
+                <!-- <section class="skills__file__grid__header">
+                    <h1 class="skills__file__grid__header-title">Why Choose HiPDF?</h1>
+                </section> -->
+
+                <section class="skills__file__grid__body">
+                    <article class="skills__file__grid__body__item">
+                        <picture class="skills__file__grid__body__item__picture">
+                            <img class="skills__file__grid__body__item__picture-img" src="{% static 'build/img/pencil.svg' %}" alt="cropper">
+                        </picture>
+
+                        <div class="skills__file__grid__body__item__text">
+                            <h3 class="skills__file__grid__body__item__text-title">Various Editing Tools</h3>
+                            <p class="skills__file__grid__body__item__text-description">
+                                Users can click on Text button to add content. Users can even draw shapes by clicking on the Shapes.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="skills__file__grid__body__item">
+                        <picture class="skills__file__grid__body__item__picture">
+                            <img class="skills__file__grid__body__item__picture-img" src="{% static 'build/img/like.svg' %}" alt="cropper">
+                        </picture>
+
+                        <div class="skills__file__grid__body__item__text">
+                            <h3 class="skills__file__grid__body__item__text-title">Works on All Platforms</h3>
+                            <p class="skills__file__grid__body__item__text-description">
+                                Whether it be Windows, Linux, or Mac OS. Our software works on all of these different operating systems.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="skills__file__grid__body__item">
+                        <picture class="skills__file__grid__body__item__picture">
+                            <img class="skills__file__grid__body__item__picture-img" src="{% static 'build/img/trophy.svg' %}" alt="cropper">
+                        </picture>
+
+                        <div class="skills__file__grid__body__item__text">
+                            <h3 class="skills__file__grid__body__item__text-title">Absolutely Free PDF</h3>
+                            <p class="skills__file__grid__body__item__text-description">
+                                Our PDF editor comes with many prebuild tools and features. 
+                                Like adding Text onto files.
+                            </p>
+                        </div>
+                    </article>
+                </section>
+
+            </main>
+        </div>
+    </section>
+
+    <section class="banner__tools">
+        <div class="content">
+            <main class="banner__tools__grid">
+                <div class="banner__tools__grid__left">
+                    <a href="" class="banner__tools__grid__left__logo">
+                        <picture class="banner__tools__grid__left__logo__picture">
+                            <img class="banner__tools__grid__left__logo__picture-img" src="{% static 'build/img/icon.svg'%}" alt="">
+                        </picture>
+                        <h1 class="banner__tools__grid__left__logo-title">Shift<span>File</span>.io</h1>
+                    </a>
+
+                    <div class="banner__tools__grid__left__desciption">
+                        <p class="banner__tools__grid__left__desciption-text">Free PDF tools process PDF tasks online.</p>
+
+                        <ul class="banner__tools__grid__left__desciption__list">
+                            <button class="banner__tools__grid__left__desciption__list-button">Get Started</button>
+                            <button class="banner__tools__grid__left__desciption__list-button">Explore All Tools</button>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="banner__tools__grid__right">
+                    <picture class="banner__tools__grid__right__picture">
+                        <img class="banner__tools__grid__right__picture-img" src="https://images.hipdf.com/images2022/product-img/compress-pdf/brand-img.png" alt="process">
+                    </picture>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <section class="rating__tools">
+        <div class="content">
+            <main class="rating__tools__grid">
+                <div class="rating__tools__grid__star">
+                    <h3 class="rating__tools__grid__star-text">HiPDF Online Tools quality rating: </h3>
+                    <picture class="rating__tools__grid__star__picture">
+                        <img class="rating__tools__grid__star__picture-img" src="{% static 'build/img/star.svg' %}" alt="rating">
+
+                        <h3 class="rating__tools__grid__star__picture-number">4.8</h3>
+                        <p class="rating__tools__grid__star__picture-votes">(188,357 Votes)</p>
+                    </picture>
+                </div>
+
+                <div class="rating__tools__grid__description">
+                    <p class="rating__tools__grid__description-text">You have to upload and download at least 1 file to rate!</p>
+                </div>
+
+                <div class="rating__tools__grid__counter">
+                    <p class="rating__tools__grid__counter-text">
+                        We've already perfectly processed <span>372,140,092</span>  files with a total size of <span>10,124</span> TB
+                    </p>
+                </div>
+            </main>
+        </div>
+    </section>
+
+
+    <script>
+        var tokenDocument = "{{ request.session.token }}";
+        var formatDocument = "{{ request.session.format }}";
+        var nameDocument = "{{ request.session.name_file }}";
+        var csrf = '{% csrf_token %}'
+        var router = "{% url 'download' token='__token__' format='__format__' %}".replace('__token__', tokenDocument).replace('__format__', formatDocument);
+        var routerDelete = "{% url 'delete_file' %}";
+    </script>
+    <script src="{% static 'build/js/download.js'%}"></script>
+
+
+    {% endblock %}
+
+
+    {% block scripts %}
+
+{% endblock %}

@@ -1,0 +1,15 @@
+// Globals Styles APP
+@import 'base/variables.scss';
+@import 'base/normalize.scss';
+@import 'base/mixins.scss';
+@import 'base/global.scss';
+
+// Layouts
+@import 'layouts/index';
+
+
+// Pages
+@import 'pages/inicio';
+@import 'pages/converter';
+@import 'pages/login';
+@import 'pages/download'

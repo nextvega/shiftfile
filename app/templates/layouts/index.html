@@ -1,0 +1,331 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="nextvega fullstack web developer portfolio and blog website">
+    <link rel="shortcut icon" href="{% static 'build/img/icon.svg'%}" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'build/css/app.css' %}" as="stylesheet">
+    <title>ShiftFile.io - {{title}}</title>
+</head>
+<body>
+
+    <header class="header__principal">
+        <div class="content">
+            <nav class="header__principal__grid">
+                <section class="header__principal__grid__left">
+                    <a href="{% url 'inicio'%}" class="header__principal__grid__left__logo">
+                        <img class="header__principal__grid__left__logo-img" src="{% static 'build/img/icon.svg'%}" alt="ShiftFile icon">
+                        <h1 class="header__principal__grid__left__logo-text">Shift<span>File</span>.io</h1>
+                    </a>
+
+                    <ul class="header__principal__grid__left__navlist">
+
+                        <li class="header__principal__grid__left__navlist__item">
+                            <a class="header__principal__grid__left__navlist__item-link" href="{% url 'converter'%}">Converter PDF</a>
+                        </li>
+
+                        <li class="header__principal__grid__left__navlist__item">
+                            <a class="header__principal__grid__left__navlist__item-link" href="{% url 'compress'%}">Compress</a>
+                        </li>
+
+                        <li class="header__principal__grid__left__navlist__item">
+                            <a class="header__principal__grid__left__navlist__item-link" href="{% url 'tools' %}">All Tools <i class="bi bi-chevron-compact-right"></i></a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="header__principal__grid__right">
+                    <div class="header__principal__grid__right__navmore">
+                        <ul class="header__principal__grid__right__navmore__list">
+                            <li class="header__principal__grid__right__navmore__list__item">
+                                <a class="header__principal__grid__right__navmore__list__item-link" target="_blank" href="https://ricardomartinez.shop/">About us</a>
+                            </li>
+
+                            <li class="header__principal__grid__right__navmore__list__item">
+                                <a class="header__principal__grid__right__navmore__list__item-link" href="#">Donate <i class="bi bi-chevron-compact-right"></i></a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="header__principal__grid__right__login">
+                        <ul class="header__principal__grid__right__login__list">
+                            <a href="{% url 'signup'%}" class="header__principal__grid__right__login__list-button">
+                                Sign Up <i class="bi bi-chevron-compact-right"></i>
+                            </a>
+
+                            <a href="{% url 'login'%}" class="header__principal__grid__right__login__list-button">
+                                Log In <i class="bi bi-chevron-compact-right"></i>
+                            </a>
+                        </ul>
+                    </div>
+                </section>
+            </nav>
+        </div>
+    </header>
+
+    {% block content%}
+
+
+    {% endblock %}
+
+    <footer class="footer__principal">
+        <div class="footer__principal__grid-navigate-border">
+
+
+            <nav class="footer__principal__grid-navigate content">
+
+                <a href="{% url 'inicio'%}" class="footer__principal__grid-navigate__logo">
+                    <img class="footer__principal__grid-navigate-img" src="{% static 'build/img/icon.svg'%}" alt="ShiftFile icon">
+                    <h1 class="footer__principal__grid-navigate-text">Shift<span>File</span>.io</h1>
+                    <p class="footer__principal__grid-navigate-slogan">Creativy Simplified</p>
+                </a>
+
+
+                <div class="footer__principal__nav ">
+                    <article class="footer__principal__nav__list">
+                        <h3 class="footer__principal__nav__list-title">
+                            Hero products
+                        </h3>
+
+                        <ul class="footer__principal__nav__list__elements">
+                            <li class="footer__principal__nav__list__elements__item">
+                                <a href="#" class="footer__principal__nav__list__elements__item-link">Filmora</a>
+                            </li>
+                            <li class="footer__principal__nav__list__elements__item">
+                                <a href="#" class="footer__principal__nav__list__elements__item-link">Uniconverter</a>
+                            </li>
+                            <li class="footer__principal__nav__list__elements__item">
+                                <a href="#" class="footer__principal__nav__list__elements__item-link">Recoverit</a>
+                            </li>
+                            <li class="footer__principal__nav__list__elements__item">
+                                <a href="#" class="footer__principal__nav__list__elements__item-link">Dr.Fone</a>
+                            </li>
+                            <li class="footer__principal__nav__list__elements__item">
+                                <a href="#" class="footer__principal__nav__list__elements__item-link">PDFelement</a>
+                            </li>
+                            <li class="footer__principal__nav__list__elements__item">
+                                <a href="#" class="footer__principal__nav__list__elements__item-link">FamiSafe</a>
+                            </li>
+                            <li class="footer__principal__nav__list__elements__item">
+                                <a href="#" class="footer__principal__nav__list__elements__item-link">All Products</a>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="footer__principal__nav__list">
+                        <h3 class="footer__principal__nav__list-title">
+                            ShiftFile
+                        </h3>
+
+                        <ul class="footer__principal__nav__list__elements">
+                            <li class="footer__principal__nav__list__elements__item">
+                                <a class="footer__principal__nav__list__elements__item-link" href="#">About</a>
+                            </li>
+                            <li class="footer__principal__nav__list__elements__item">
+                                <a class="footer__principal__nav__list__elements__item-link" href="#">Newsroom</a>
+                            </li>
+                            <li class="footer__principal__nav__list__elements__item">
+                                <a class="footer__principal__nav__list__elements__item-link" href="#">Global Presence</a>
+                            </li>
+                            <li class="footer__principal__nav__list__elements__item">
+                                <a class="footer__principal__nav__list__elements__item-link" href="#">Founderś Speech</a>
+                            </li>
+                            <li class="footer__principal__nav__list__elements__item">
+                                <a class="footer__principal__nav__list__elements__item-link" href="#">Carrers</a>
+                            </li>
+                            <li class="footer__principal__nav__list__elements__item">
+                                <a class="footer__principal__nav__list__elements__item-link" href="#">Contact us</a>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="footer__principal__nav__list">
+                        <h3 class="footer__principal__nav__list-title">
+                            Services
+                        </h3>
+
+                        <ul class="footer__principal__nav__list__elements">
+                            <li class="footer__principal__nav__list__elements__item">
+                                <a href="#" class="footer__principal__nav__list__elements__item-link">Filmora</a>
+                            </li>
+                            <li class="footer__principal__nav__list__elements__item">
+                                <a href="#" class="footer__principal__nav__list__elements__item-link">Uniconverter</a>
+                            </li>
+                            <li class="footer__principal__nav__list__elements__item">
+                                <a href="#" class="footer__principal__nav__list__elements__item-link">Recoverit</a>
+                            </li>
+                            <li class="footer__principal__nav__list__elements__item">
+                                <a href="#" class="footer__principal__nav__list__elements__item-link">Dr.Fone</a>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="footer__principal__nav__list-social">
+                        <div class="footer__principal__nav__list-grid">
+                            <h3 class="footer__principal__nav__list-title">
+                                Explore More
+                            </h3>
+        
+                            <div class="footer__principal__nav__list__content">
+                                <ul class="footer__principal__nav__list__content__elements">
+                                    <li class="footer__principal__nav__list__content__elements-item">
+                                        <a class="footer__principal__nav__list__content__elements-item-link" href="#">Explore</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="footer__principal__nav__list-grid">
+                            <h3 class="footer__principal__nav__list-title">
+                                Follow us
+                            </h3>
+        
+                            <ul class="footer__principal__nav__list__content__elements">
+                                <li class="footer__principal__nav__list__content__elements-item">
+                                    <a href="#" class="footer__principal__nav__list__content__elements-item-link">
+                                        <i class="bi bi-facebook"></i>
+                                    </a>
+                                </li>
+        
+                                <li class="footer__principal__nav__list__content__elements-item">
+                                    <a href="#" class="footer__principal__nav__list__content__elements-item-link">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                </li>
+        
+                                <li class="footer__principal__nav__list__content__elements-item">
+                                    <a href="#" class="footer__principal__nav__list__content__elements-item-link">
+                                        <i class="bi bi-twitter-x"></i>
+                                    </a>
+                                </li>
+        
+        
+                                <li class="footer__principal__nav__list__content__elements-item">
+                                    <a href="#" class="footer__principal__nav__list__content__elements-item-link">
+                                        <i class="bi bi-youtube"></i>
+                                    </a>
+                                </li>
+        
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </nav>
+
+        </div>
+
+        <div class="footer__principal__grid-border">
+            <main class="footer__principal__grid content">
+                <section class="footer__principal__grid__left">
+                    <ul class="footer__principal__grid__left__list">
+                        <li class="footer__principal__grid__left__list__item">
+                            <a class="footer__principal__grid__left__list__item-link" href="#">Terms and Conditions</a>
+                        </li>
+
+                        <li class="footer__principal__grid__left__list__item">
+                            <a class="footer__principal__grid__left__list__item-link" href="#">Privacy</a>
+                        </li>
+
+                        <li class="footer__principal__grid__left__list__item">
+                            <a class="footer__principal__grid__left__list__item-link" href="#">Cookies</a>
+                        </li>
+
+                        <li class="footer__principal__grid__left__list__item">
+                            <a class="footer__principal__grid__left__list__item-link" href="#">License Agreement</a>
+                        </li>
+
+                        <li class="footer__principal__grid__left__list__item">
+                            <a class="footer__principal__grid__left__list__item-link" href="#">Refund Policy</a>
+                        </li>
+
+                        <li class="footer__principal__grid__left__list__item">
+                            <a class="footer__principal__grid__left__list__item-link" href="#">Uninstall</a>
+                        </li>
+                    </ul>
+
+                    <p class="footer__principal__grid__left-copyright">
+                        Copyright © 2024 NextVega. All rights reserved. The order process, tax issue, and invoicing to end users are conducted by NextVega Technology Group Co., Ltd.
+                    </p>
+                </section>
+
+                <section class="footer__principal__grid__right">
+                    <i class="bi bi-globe"></i>
+                    <button class="footer__principal__grid__righ-button">
+                        Language <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                </section>
+            </main>
+        </div>
+
+    </footer>
+
+    {% block scripts %}
+
+
+    {% endblock %}
+    <script>
+        var routerDelete = "{% url 'delete_file' %}";
+        var tokenDocument = "{{ request.session.token }}";
+        var formatDocument = "{{ request.session.format }}";
+        var nameDocument = "{{ request.session.name_file }}";
+
+        document.body.addEventListener('drop', function(e) {
+            e.preventDefault(); 
+            const files = e.dataTransfer.files;
+
+            const targetElement = e.target;
+
+            console.log(targetElement);
+
+            if (!targetElement.classList.contains('upload__converter__grid') && !targetElement.closest('.upload__converter__grid')) {
+                const files = e.dataTransfer.files;
+                if (files.length > 0) {
+                    for (let i = 0; i < files.length; i++) {
+                        const file = files[i];
+                        if (file.type === 'application/pdf') {
+                            const fileURL = URL.createObjectURL(file);
+                            window.open(fileURL, '_blank');
+                            URL.revokeObjectURL(fileURL);
+                        } else {
+                            console.log(`Nombre del archivo: ${file.name}, Tipo: ${file.type}`);
+                        }
+                    }
+                }
+            }
+        });
+
+        document.body.addEventListener('dragover', function(e) {
+            const targetElement = e.target;
+
+            // Permitir dragover solo si no es dentro de .upload__converter__grid
+            if (!targetElement.classList.contains('upload__converter__grid') && !targetElement.closest('.upload__converter__grid')) {
+                e.preventDefault();
+            }
+        });
+
+        document.body.addEventListener('dragenter', function(e) {
+            const targetElement = e.target;
+
+            // Permitir dragenter solo si no es dentro de .upload__converter__grid
+            if (!targetElement.classList.contains('upload__converter__grid') && !targetElement.closest('.upload__converter__grid')) {
+                e.preventDefault();
+            }
+        });
+
+    </script>
+    <script src="{% static 'build/js/delete.js'%}"></script>
+</body>
+</html>

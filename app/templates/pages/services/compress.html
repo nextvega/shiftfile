@@ -1,0 +1,186 @@
+{% extends 'layouts/index.html' %}
+{% load static %}
+
+
+{% block title %} {{title}} {% endblock %}
+
+
+
+{% block content %}
+    <section class="router__converter">
+        <div class="content">
+            <main class="router__converter__grid">
+                <div class="router__converter__grid__links">
+                    <ul class="router__converter__grid__links__list">
+                        <li class="router__converter__grid__links__list__item">
+                            <a class="router__converter__grid__links__list__item-link" href="#">Home <i class="bi bi-chevron-compact-right"></i></a>
+                        </li>
+
+                        <li class="router__converter__grid__links__list__item">
+                            <a class="router__converter__grid__links__list__item-link" href="#">All Tools <i class="bi bi-chevron-compact-right"></i></a>
+                        </li>
+
+                        <li class="router__converter__grid__links__list__item">
+                            <a class="router__converter__grid__links__list__item-link" href="#">PDF to word <i class="bi bi-chevron-compact-right"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="router__converter__grid__title">
+                    <picture class="router__converter__grid__title__picture">
+                        <img class="router__converter__grid__title__picture-img" src="{% static 'build/img/compress.svg'%}" alt="pdf converter">
+                        <h1 class="router__converter__grid__title__picture-text">Compress PDF</h1>
+                    </picture>
+
+                    <p class="router__converter__grid__title-description">
+                        The easiest way to reduce PDF size online. 
+                    </p>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <section class="upload__converter">
+        <div class="content">
+            <main class="upload__converter__grid dropzone">
+                <div class="upload__converter__grid__file">
+                    <picture class="upload__converter__grid__file__picture">
+                        <img class="upload__converter__grid__file__picture-img" src="{% static 'build/img/upload.svg'%}" alt="file upload">
+                    </picture>
+
+                    <div class="upload__converter__grid__file__button">
+                        <button class="upload__converter__grid__file__button-click">
+                            Choose File
+                        </button>
+                        <form id="uploadForm" action="{ url 'converter'}" method="post" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <input type="file" id="fileInput" name="fileInput" value="">
+                            <input readonly type="text" id="formatInput" name="formatInput" value=".docx">
+                        </form>
+                        <p class="upload__converter__grid__file__button-text">or drop files here</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <section class="skills__file">
+        <div class="content">
+            <main class="skills__file__grid">
+
+                <!-- <section class="skills__file__grid__header">
+                    <h1 class="skills__file__grid__header-title">Why Choose HiPDF?</h1>
+                </section> -->
+
+                <section class="skills__file__grid__body">
+                    <article class="skills__file__grid__body__item">
+                        <picture class="skills__file__grid__body__item__picture">
+                            <img class="skills__file__grid__body__item__picture-img" src="{% static 'build/img/pencil.svg' %}" alt="cropper">
+                        </picture>
+
+                        <div class="skills__file__grid__body__item__text">
+                            <h3 class="skills__file__grid__body__item__text-title">Various Editing Tools</h3>
+                            <p class="skills__file__grid__body__item__text-description">
+                                Users can click on Text button to add content. Users can even draw shapes by clicking on the Shapes.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="skills__file__grid__body__item">
+                        <picture class="skills__file__grid__body__item__picture">
+                            <img class="skills__file__grid__body__item__picture-img" src="{% static 'build/img/like.svg' %}" alt="cropper">
+                        </picture>
+
+                        <div class="skills__file__grid__body__item__text">
+                            <h3 class="skills__file__grid__body__item__text-title">Works on All Platforms</h3>
+                            <p class="skills__file__grid__body__item__text-description">
+                                Whether it be Windows, Linux, or Mac OS. Our software works on all of these different operating systems.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="skills__file__grid__body__item">
+                        <picture class="skills__file__grid__body__item__picture">
+                            <img class="skills__file__grid__body__item__picture-img" src="{% static 'build/img/trophy.svg' %}" alt="cropper">
+                        </picture>
+
+                        <div class="skills__file__grid__body__item__text">
+                            <h3 class="skills__file__grid__body__item__text-title">Absolutely Free PDF</h3>
+                            <p class="skills__file__grid__body__item__text-description">
+                                Our PDF editor comes with many prebuild tools and features. 
+                                Like adding Text onto files.
+                            </p>
+                        </div>
+                    </article>
+                </section>
+
+            </main>
+        </div>
+    </section>
+
+    <section class="banner__tools">
+        <div class="content">
+            <main class="banner__tools__grid">
+                <div class="banner__tools__grid__left">
+                    <a href="" class="banner__tools__grid__left__logo">
+                        <picture class="banner__tools__grid__left__logo__picture">
+                            <img class="banner__tools__grid__left__logo__picture-img" src="{% static 'build/img/icon.svg'%}" alt="">
+                        </picture>
+                        <h1 class="banner__tools__grid__left__logo-title">Shift<span>File</span>.io</h1>
+                    </a>
+
+                    <div class="banner__tools__grid__left__desciption">
+                        <p class="banner__tools__grid__left__desciption-text">Free PDF tools process PDF tasks online.</p>
+
+                        <ul class="banner__tools__grid__left__desciption__list">
+                            <button class="banner__tools__grid__left__desciption__list-button">Get Started</button>
+                            <button class="banner__tools__grid__left__desciption__list-button">Explore All Tools</button>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="banner__tools__grid__right">
+                    <picture class="banner__tools__grid__right__picture">
+                        <img class="banner__tools__grid__right__picture-img" src="https://images.hipdf.com/images2022/product-img/compress-pdf/brand-img.png" alt="process">
+                    </picture>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <section class="rating__tools">
+        <div class="content">
+            <main class="rating__tools__grid">
+                <div class="rating__tools__grid__star">
+                    <h3 class="rating__tools__grid__star-text">HiPDF Online Tools quality rating: </h3>
+                    <picture class="rating__tools__grid__star__picture">
+                        <img class="rating__tools__grid__star__picture-img" src="{% static 'build/img/star.svg' %}" alt="rating">
+
+                        <h3 class="rating__tools__grid__star__picture-number">4.8</h3>
+                        <p class="rating__tools__grid__star__picture-votes">(188,357 Votes)</p>
+                    </picture>
+                </div>
+
+                <div class="rating__tools__grid__description">
+                    <p class="rating__tools__grid__description-text">You have to upload and download at least 1 file to rate!</p>
+                </div>
+
+                <div class="rating__tools__grid__counter">
+                    <p class="rating__tools__grid__counter-text">
+                        We've already perfectly processed <span>372,140,092</span>  files with a total size of <span>10,124</span> TB
+                    </p>
+                </div>
+            </main>
+        </div>
+    </section>
+{% endblock %}
+
+
+{% block scripts %}
+
+    <script>
+        var router = "{% url 'compress' %}"
+    </script>
+    <script src="{% static 'build/js/upload.js'%}"></script>
+
+{% endblock %}

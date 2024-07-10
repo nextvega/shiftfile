@@ -1,0 +1,1914 @@
+@charset "UTF-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background-color: #FCFCFC;
+  color: #0D1117;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+  padding: 0 !important;
+}
+
+p {
+  font-size: 1.8rem;
+  color: #0D1117;
+  margin: 0;
+}
+
+.content {
+  width: 95%;
+  max-width: 115.5rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 520px) {
+  .content {
+    width: 95%;
+    max-width: 125rem;
+    margin: 0 auto;
+  }
+}
+a {
+  text-decoration: none;
+  margin: 0;
+  color: #0D1117;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+  color: #0D1117;
+}
+
+h2 {
+  font-size: 3.6rem;
+  margin: 0;
+  color: #0D1117;
+}
+
+h3 {
+  font-size: 3rem;
+  margin: 0;
+  color: #0D1117;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.delete__margin__top {
+  margin-top: 4rem !important;
+}
+
+.disable-scroll {
+  overflow-y: hidden;
+}
+
+/* Estilos para el scrollbar en navegadores webkit */
+.background__opacity {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  transition: all 300ms ease-in-out;
+}
+
+/** config sweetalert2 **/
+.swal2-popup {
+  font-size: 1.6rem;
+  font-weight: 800 !important;
+}
+
+.swal2-html-container {
+  margin: -7px !important;
+  margin-bottom: 0 !important;
+  font-size: 1.6rem !important;
+  font-weight: 400 !important;
+}
+
+body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
+  overflow: auto !important;
+}
+
+/** Styles TinyMCE **/
+.tox-tinymce {
+  border: none !important;
+}
+
+.tox .tox-toolbar, .tox .tox-toolbar__overflow, .tox .tox-toolbar__primary {
+  background: none !important;
+  background-color: transparent !important;
+  border-bottom: 3px solid #0D1117 !important;
+}
+
+.tox .tox-toolbar-overlord {
+  background-color: #151b24 !important;
+}
+
+.tox:not([dir=rtl]) .tox-toolbar__group:not(:last-of-type) {
+  border-right: none !important;
+}
+
+.tox .tox-tbtn svg {
+  cursor: pointer;
+  fill: #474747 !important;
+}
+.tox .tox-tbtn svg:hover {
+  fill: #0D1117 !important;
+}
+
+.tox .tox-edit-area__iframe {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  cursor: text;
+}
+
+.tox .tox-statusbar {
+  display: none !important;
+}
+
+#fileInput {
+  display: none;
+}
+
+#formatInput {
+  display: none;
+}
+
+.header__principal {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: #FFFFFF;
+  padding: 1.8rem;
+  box-shadow: 0px 0px 16px rgba(39, 43, 51, 0.12);
+  top: 0;
+}
+.header__principal .header__principal__grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__principal .header__principal__grid .header__principal__grid__left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5rem;
+}
+.header__principal .header__principal__grid .header__principal__grid__left .header__principal__grid__left__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+.header__principal .header__principal__grid .header__principal__grid__left .header__principal__grid__left__logo:hover .header__principal__grid__left__logo-img {
+  transform: scale(0.8);
+}
+.header__principal .header__principal__grid .header__principal__grid__left .header__principal__grid__left__logo .header__principal__grid__left__logo-img {
+  height: 3.2rem;
+  width: 3.2rem;
+  display: block;
+  border-radius: 0.5rem;
+  transition: all 0.5s ease;
+}
+.header__principal .header__principal__grid .header__principal__grid__left .header__principal__grid__left__logo .header__principal__grid__left__logo-text {
+  font-size: 2rem;
+}
+.header__principal .header__principal__grid .header__principal__grid__left .header__principal__grid__left__logo .header__principal__grid__left__logo-text span {
+  color: #4D64FD;
+}
+.header__principal .header__principal__grid .header__principal__grid__left .header__principal__grid__left__navlist {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+  text-align: center;
+}
+.header__principal .header__principal__grid .header__principal__grid__left .header__principal__grid__left__navlist .header__principal__grid__left__navlist__item .header__principal__grid__left__navlist__item-link {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #0D1117;
+  transition: all 0.3s ease;
+}
+.header__principal .header__principal__grid .header__principal__grid__left .header__principal__grid__left__navlist .header__principal__grid__left__navlist__item .header__principal__grid__left__navlist__item-link:hover {
+  color: #4D64FD;
+  text-decoration: underline;
+}
+.header__principal .header__principal__grid .header__principal__grid__left .header__principal__grid__left__navlist .header__principal__grid__left__navlist__item .header__principal__grid__left__navlist__item-link .bi::before {
+  vertical-align: -0.15em;
+}
+.header__principal .header__principal__grid .header__principal__grid__right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5rem;
+}
+.header__principal .header__principal__grid .header__principal__grid__right .header__principal__grid__right__navmore .header__principal__grid__right__navmore__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+  text-align: center;
+}
+.header__principal .header__principal__grid .header__principal__grid__right .header__principal__grid__right__navmore .header__principal__grid__right__navmore__list .header__principal__grid__right__navmore__list__item .header__principal__grid__right__navmore__list__item-link {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #0D1117;
+  transition: all 0.3s ease;
+}
+.header__principal .header__principal__grid .header__principal__grid__right .header__principal__grid__right__navmore .header__principal__grid__right__navmore__list .header__principal__grid__right__navmore__list__item .header__principal__grid__right__navmore__list__item-link:hover {
+  color: #4D64FD;
+  text-decoration: underline;
+}
+.header__principal .header__principal__grid .header__principal__grid__right .header__principal__grid__right__navmore .header__principal__grid__right__navmore__list .header__principal__grid__right__navmore__list__item .header__principal__grid__right__navmore__list__item-link .bi::before {
+  vertical-align: -0.15em;
+}
+.header__principal .header__principal__grid .header__principal__grid__right .header__principal__grid__right__login .header__principal__grid__right__login__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+.header__principal .header__principal__grid .header__principal__grid__right .header__principal__grid__right__login .header__principal__grid__right__login__list .header__principal__grid__right__login__list-button:first-of-type {
+  display: block;
+  padding: 0.6rem 1.6rem;
+  background-color: #4D64FD;
+  color: #FFFFFF;
+  font-weight: 600;
+  border: 2px solid #4D64FD;
+  border-radius: 0.3rem;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  letter-spacing: -0.3px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.header__principal .header__principal__grid .header__principal__grid__right .header__principal__grid__right__login .header__principal__grid__right__login__list .header__principal__grid__right__login__list-button:first-of-type:hover {
+  background-color: transparent;
+  color: #4D64FD;
+}
+.header__principal .header__principal__grid .header__principal__grid__right .header__principal__grid__right__login .header__principal__grid__right__login__list .header__principal__grid__right__login__list-button:last-of-type {
+  display: block;
+  padding: 0.6rem 1.6rem;
+  background-color: transparent;
+  color: #4D64FD;
+  font-weight: 600;
+  border: 2px solid #4D64FD;
+  border-radius: 0.3rem;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  letter-spacing: -0.3px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.header__principal .header__principal__grid .header__principal__grid__right .header__principal__grid__right__login .header__principal__grid__right__login__list .header__principal__grid__right__login__list-button:last-of-type:hover {
+  background-color: #4D64FD;
+  color: #FFFFFF;
+}
+
+.footer__principal {
+  background-color: #0D1117;
+}
+.footer__principal .footer__principal__grid-navigate {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 5rem;
+  align-items: center;
+  padding: 4rem 0;
+  padding-bottom: 3rem;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__grid-navigate__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__grid-navigate__logo:hover .footer__principal__grid-navigate-img {
+  transform: scale(0.8);
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__grid-navigate__logo .footer__principal__grid-navigate-img {
+  height: 7.2rem;
+  width: 7.2rem;
+  display: block;
+  border-radius: 0.5rem;
+  transition: all 0.5s ease;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__grid-navigate__logo .footer__principal__grid-navigate-text {
+  font-size: 2.5rem;
+  color: #FFFFFF;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__grid-navigate__logo .footer__principal__grid-navigate-text span {
+  color: #4D64FD;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__grid-navigate__logo .footer__principal__grid-navigate-slogan {
+  font-size: 2rem;
+  color: #FFFFFF;
+  font-family: "Shadows Into Light", cursive;
+  margin-top: -2rem;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__grid-navigate__logo .footer__principal__grid-navigate-slogan span {
+  color: #4D64FD;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__nav {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__nav .footer__principal__nav__list .footer__principal__nav__list-title {
+  color: #FFFFFF;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__nav .footer__principal__nav__list .footer__principal__nav__list__elements {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__nav .footer__principal__nav__list .footer__principal__nav__list__elements .footer__principal__nav__list__elements__item .footer__principal__nav__list__elements__item-link {
+  color: #c4c4c4;
+  font-size: 1.2rem;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__nav .footer__principal__nav__list .footer__principal__nav__list__elements .footer__principal__nav__list__elements__item .footer__principal__nav__list__elements__item-link:hover {
+  text-decoration: underline;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__nav .footer__principal__nav__list-social {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__nav .footer__principal__nav__list-social .footer__principal__nav__list-grid .footer__principal__nav__list-title {
+  color: #FFFFFF;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__nav .footer__principal__nav__list-social .footer__principal__nav__list-grid .footer__principal__nav__list__content .footer__principal__nav__list__content__elements {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__nav .footer__principal__nav__list-social .footer__principal__nav__list-grid .footer__principal__nav__list__content .footer__principal__nav__list__content__elements .footer__principal__nav__list__content__elements-item .footer__principal__nav__list__content__elements-item-link {
+  color: #c4c4c4;
+  font-size: 1.2rem;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__nav .footer__principal__nav__list-social .footer__principal__nav__list-grid .footer__principal__nav__list__content .footer__principal__nav__list__content__elements .footer__principal__nav__list__content__elements-item .footer__principal__nav__list__content__elements-item-link:hover {
+  text-decoration: underline;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__nav .footer__principal__nav__list-social .footer__principal__nav__list__content__elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 2rem;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__nav .footer__principal__nav__list-social .footer__principal__nav__list__content__elements .footer__principal__nav__list__content__elements-item .footer__principal__nav__list__content__elements-item-link .bi {
+  color: #c4c4c4;
+  font-size: 1.4rem;
+}
+.footer__principal .footer__principal__grid-navigate .footer__principal__nav .footer__principal__nav__list-social .footer__principal__nav__list__content__elements .footer__principal__nav__list__content__elements-item .footer__principal__nav__list__content__elements-item-link .bi:hover {
+  color: #FFFFFF;
+}
+.footer__principal .footer__principal__grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  padding: 2rem 0;
+}
+.footer__principal .footer__principal__grid .footer__principal__grid__left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer__principal .footer__principal__grid .footer__principal__grid__left .footer__principal__grid__left__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 5rem;
+}
+.footer__principal .footer__principal__grid .footer__principal__grid__left .footer__principal__grid__left__list .footer__principal__grid__left__list__item .footer__principal__grid__left__list__item-link {
+  font-size: 1.2rem;
+  color: #c4c4c4;
+}
+.footer__principal .footer__principal__grid .footer__principal__grid__left .footer__principal__grid__left__list .footer__principal__grid__left__list__item .footer__principal__grid__left__list__item-link:hover {
+  color: #FFFFFF;
+}
+.footer__principal .footer__principal__grid .footer__principal__grid__left .footer__principal__grid__left-copyright {
+  width: 70rem;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  color: #c4c4c4;
+}
+.footer__principal .footer__principal__grid .footer__principal__grid__right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+.footer__principal .footer__principal__grid .footer__principal__grid__right .bi {
+  color: #c4c4c4;
+  vertical-align: middle;
+  margin-top: 0.2rem;
+}
+.footer__principal .footer__principal__grid .footer__principal__grid__right .footer__principal__grid__righ-button {
+  background-color: transparent;
+  border: 0;
+  color: #c4c4c4;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.footer__principal .footer__principal__grid .footer__principal__grid__right .footer__principal__grid__righ-button:hover {
+  color: #FFFFFF;
+}
+.footer__principal .footer__principal__grid .footer__principal__grid__right .footer__principal__grid__righ-button .bi {
+  font-size: 1rem;
+}
+
+.footer__principal__grid-border {
+  border-top: 1px solid #474747;
+}
+
+.welcome__slogan {
+  position: relative;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  max-height: 50rem;
+  min-height: 50rem;
+  padding-top: 7rem;
+}
+.welcome__slogan::after {
+  content: "";
+  display: block;
+  top: -120px;
+  width: 100%;
+  z-index: 1;
+  background-image: url("../img/banner-bg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+  filter: blur(25px);
+}
+.welcome__slogan .welcome__slogan__principal {
+  position: relative;
+  z-index: 2;
+  max-height: 26rem;
+  min-height: 26rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.welcome__slogan .welcome__slogan__principal .welcome__slogan__principal-title {
+  font-size: 6rem;
+}
+.welcome__slogan .welcome__slogan__principal .welcome__slogan__principal-title span {
+  color: #4D64FD;
+}
+.welcome__slogan .welcome__slogan__principal .welcome__slogan__principal-description {
+  font-size: 1.6rem;
+  max-width: 83rem;
+  margin-top: 1.5rem;
+  line-height: 1.2;
+  color: #474747;
+}
+
+.popular__tools {
+  position: relative;
+  z-index: 3;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 30px 0px rgba(36, 52, 189, 0.1);
+  margin: 0rem 1rem;
+  margin-top: -17.5rem;
+  border-radius: 2rem;
+  padding: 3.8rem 0rem;
+  margin-bottom: 5rem;
+}
+.popular__tools .popular__tools__grid {
+  display: flex;
+  flex-direction: column;
+}
+.popular__tools .popular__tools__grid .popular__tools__grid__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.popular__tools .popular__tools__grid .popular__tools__grid__header .popular__tools__grid__header__title {
+  margin-left: -2rem;
+}
+.popular__tools .popular__tools__grid .popular__tools__grid__header .popular__tools__grid__header__title .popular__tools__grid__header__title-text {
+  font-size: 2.3rem;
+}
+.popular__tools .popular__tools__grid .popular__tools__grid__header .popular__tools__grid__header__title .popular__tools__grid__header__title-text .bi {
+  margin-left: 0.5rem;
+  vertical-align: 0.12rem;
+  font-size: 1.8rem;
+  color: #0D1117;
+}
+.popular__tools .popular__tools__grid .popular__tools__grid__header .popular__tools__grid__header__explore {
+  margin-right: -3rem;
+}
+.popular__tools .popular__tools__grid .popular__tools__grid__header .popular__tools__grid__header__explore .popular__tools__grid__header__explore-link {
+  font-weight: 600;
+  color: #4D64FD;
+}
+.popular__tools .popular__tools__grid .popular__tools__grid__body {
+  margin-top: 2.2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 0rem 3.5rem;
+}
+.popular__tools .popular__tools__grid .popular__tools__grid__body .popular__tools__grid__body__tool {
+  min-height: 23rem;
+  max-height: 23rem;
+  width: 25.5rem;
+  position: relative;
+  text-align: left;
+  border: 1px solid #ebebeb;
+  border-radius: 12px;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+.popular__tools .popular__tools__grid .popular__tools__grid__body .popular__tools__grid__body__tool:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.popular__tools .popular__tools__grid .popular__tools__grid__body .popular__tools__grid__body__tool .popular__tools__grid__body__tool__link {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2.5rem 2rem;
+}
+.popular__tools .popular__tools__grid .popular__tools__grid__body .popular__tools__grid__body__tool .popular__tools__grid__body__tool__link .popular__tools__grid__body__tool__link__picture .popular__tools__grid__body__tool__link__picture-img {
+  width: 64px;
+  height: 64px;
+}
+.popular__tools .popular__tools__grid .popular__tools__grid__body .popular__tools__grid__body__tool .popular__tools__grid__body__tool__link .popular__tools__grid__body__tool__link__description .popular__tools__grid__body__tool__link__description-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.popular__tools .popular__tools__grid .popular__tools__grid__body .popular__tools__grid__body__tool .popular__tools__grid__body__tool__link .popular__tools__grid__body__tool__link__description .popular__tools__grid__body__tool__link__description-more {
+  font-size: 1.4rem;
+  color: #474747;
+}
+
+.galery__tools {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 71.5rem;
+  max-height: 71.5rem;
+  padding: 2rem 0;
+  padding-bottom: 0;
+}
+.galery__tools .galery__tools__grid {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+.galery__tools .galery__tools__grid .galery__tools__grid__header {
+  margin-bottom: 3rem;
+}
+.galery__tools .galery__tools__grid .galery__tools__grid__header .galery__tools__grid__header-title {
+  font-size: 4.5rem;
+  font-weight: 700;
+  text-align: left;
+}
+.galery__tools .galery__tools__grid .galery__tools__grid__header .galery__tools__grid__header-title span {
+  color: #4D64FD;
+  text-transform: uppercase;
+}
+.galery__tools .galery__tools__grid .galery__tools__grid__header .galery__tools__grid__header-text {
+  font-size: 1.8rem;
+  text-align: left;
+}
+.galery__tools .galery__tools__grid .galery__tools__grid__body {
+  position: relative;
+}
+.galery__tools .galery__tools__grid .galery__tools__grid__body .galery__tools__grid__body__list {
+  display: flex;
+  gap: 1.5rem;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 2rem;
+}
+.galery__tools .galery__tools__grid .galery__tools__grid__body .galery__tools__grid__body__list .galery__tools__grid__body__list__item {
+  width: 0%;
+  flex-grow: 1;
+  object-fit: cover;
+  transition: 0.8s ease;
+  filter: grayscale(0);
+  position: relative;
+  max-height: 45rem;
+  min-height: 45rem;
+  overflow: hidden;
+  z-index: 2;
+}
+.galery__tools .galery__tools__grid .galery__tools__grid__body .galery__tools__grid__body__list .galery__tools__grid__body__list__item:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.galery__tools .galery__tools__grid .galery__tools__grid__body .galery__tools__grid__body__list .galery__tools__grid__body__list__item::after {
+  content: "";
+  display: block;
+  top: 0px;
+  width: 100%;
+  z-index: -1;
+  background: linear-gradient(22deg, rgba(234, 217, 255, 0) 71.74%, #BAD4FE 119.2%), linear-gradient(180deg, rgba(186, 212, 254, 0) 61.98%, #E8D5FF 101.19%), linear-gradient(180deg, #DBE0FF 0%, #E2E8FF 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  border-radius: 1.5rem;
+}
+.galery__tools .galery__tools__grid .galery__tools__grid__body .galery__tools__grid__body__list .galery__tools__grid__body__list__item .galery__tools__grid__body__list__item__title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #3D47FC 0%, #9936FC 56.5%, #B228FC 100%);
+  background-clip: border-box;
+  font-weight: 700;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+}
+.galery__tools .galery__tools__grid .galery__tools__grid__body .galery__tools__grid__body__list .galery__tools__grid__body__list__item .galery__tools__grid__body__list__item-active__main {
+  display: none;
+}
+.galery__tools .galery__tools__grid .galery__tools__grid__body .galery__tools__grid__body__list .galery__tools__grid__body__list__item-active {
+  width: 65rem !important;
+  flex-grow: 1;
+  object-fit: cover;
+  transition: 0.8s ease;
+  filter: grayscale(0);
+  border-radius: 0.5rem;
+  max-height: 45rem !important;
+  min-height: 45rem !important;
+  overflow: hidden;
+  z-index: 10;
+}
+.galery__tools .galery__tools__grid .galery__tools__grid__body .galery__tools__grid__body__list .galery__tools__grid__body__list__item-active::after {
+  content: "";
+  display: block;
+  top: 0px;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0)), url("https://images.hipdf.com/images2024/homepage/pic-person-1.png");
+  background: var(--pseudo-background-color);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  border-radius: 1.5rem;
+}
+.galery__tools .galery__tools__grid .galery__tools__grid__body .galery__tools__grid__body__list .galery__tools__grid__body__list__item-active .galery__tools__grid__body__list__item {
+  display: none;
+}
+.galery__tools .galery__tools__grid .galery__tools__grid__body .galery__tools__grid__body__list .galery__tools__grid__body__list__item-active .text_none {
+  display: none;
+}
+.galery__tools .galery__tools__grid .galery__tools__grid__body .galery__tools__grid__body__list .galery__tools__grid__body__list__item-active .galery__tools__grid__body__list__item__title {
+  display: none;
+}
+.galery__tools .galery__tools__grid .galery__tools__grid__body .galery__tools__grid__body__list .galery__tools__grid__body__list__item-active .galery__tools__grid__body__list__item-active__main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: flex-end;
+  justify-items: center;
+  padding: 4rem 4rem;
+  padding-right: 1rem;
+}
+.galery__tools .galery__tools__grid .galery__tools__grid__body .galery__tools__grid__body__list .galery__tools__grid__body__list__item-active .galery__tools__grid__body__list__item-active__main .galery__tools__grid__body__list__item-active__main__left .galery__tools__grid__body__list__item-active__main__left-title {
+  color: #FFFFFF;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.galery__tools .galery__tools__grid .galery__tools__grid__body .galery__tools__grid__body__list .galery__tools__grid__body__list__item-active .galery__tools__grid__body__list__item-active__main .galery__tools__grid__body__list__item-active__main__left .galery__tools__grid__body__list__item-active__main__left-text {
+  color: #FFFFFF;
+  font-size: 1.6rem;
+}
+.galery__tools .galery__tools__grid .galery__tools__grid__body .galery__tools__grid__body__list .galery__tools__grid__body__list__item-active .galery__tools__grid__body__list__item-active__main .galery__tools__grid__body__list__item-active__main__right .galery__tools__grid__body__list__item-active__main__right-link {
+  display: block;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  padding: 1.2rem 2rem;
+  border-radius: 0.8rem;
+  width: 100%;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.galery__tools .galery__tools__grid .galery__tools__grid__body .galery__tools__grid__body__list .galery__tools__grid__body__list__item-active .galery__tools__grid__body__list__item-active__main .galery__tools__grid__body__list__item-active__main__right .galery__tools__grid__body__list__item-active__main__right-link:hover {
+  background-color: #FFFFFF;
+  color: #4D64FD;
+}
+.galery__tools .galery__tools__grid__more {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+.galery__tools .galery__tools__grid__more .galery__tools__grid__more-title {
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+.galery__tools .galery__tools__grid__more .galery__tools__grid__more-title span {
+  background: linear-gradient(90deg, #3D47FC 0%, #9936FC 56.5%, #B228FC 100%);
+  background-clip: border-box;
+  font-weight: 700;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+}
+.galery__tools .galery__tools__grid__more .galery__tools__grid__more-link {
+  padding: 0.8rem 2rem;
+  background-color: #4D64FD;
+  border: 2px solid #4D64FD;
+  color: #FFFFFF;
+  border-radius: 0.6rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.fingertips__more {
+  max-height: 50rem;
+  min-height: 50rem;
+  position: relative;
+  padding: 5rem 0;
+  padding-bottom: 0;
+  margin-bottom: -2rem;
+  overflow: hidden;
+}
+.fingertips__more::after {
+  content: "";
+  display: block;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  background: linear-gradient(256deg, rgba(255, 255, 255, 0.24) 3.41%, rgba(255, 255, 255, 0) 69.7%), linear-gradient(118deg, rgba(209, 169, 255, 0.1) -4.36%, rgba(209, 169, 255, 0) 34.61%), linear-gradient(180deg, rgba(193, 222, 255, 0.1) -2.58%, rgba(222, 248, 255, 0) 69.67%), linear-gradient(199deg, rgba(165, 197, 255, 0.1) 7.96%, rgba(185, 221, 255, 0.1) 53.71%, rgba(220, 240, 255, 0.1) 92.11%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+}
+.fingertips__more .fingertips__more__grid {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+.fingertips__more .fingertips__more__grid .fingertips__more__grid__header {
+  margin-bottom: 5rem;
+}
+.fingertips__more .fingertips__more__grid .fingertips__more__grid__header .fingertips__more__grid__header-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: left;
+}
+.fingertips__more .fingertips__more__grid .fingertips__more__grid__header .fingertips__more__grid__header-title span {
+  color: #4D64FD;
+  text-transform: capitalize;
+}
+.fingertips__more .fingertips__more__grid .fingertips__more__grid__body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 5rem;
+}
+.fingertips__more .fingertips__more__grid .fingertips__more__grid__body .fingertips__more__grid__body__item {
+  background-color: #FFFFFF;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0px 3.32px 28.05px 0px rgba(0, 83, 207, 0.1490196078);
+}
+.fingertips__more .fingertips__more__grid .fingertips__more__grid__body .fingertips__more__grid__body__item .fingertips__more__grid__body__item__link {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.fingertips__more .fingertips__more__grid .fingertips__more__grid__body .fingertips__more__grid__body__item .fingertips__more__grid__body__item__link .fingertips__more__grid__body__item__link__picture .fingertips__more__grid__body__item__link__picture-img {
+  width: 25rem;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+.fingertips__more .fingertips__more__grid .fingertips__more__grid__body .fingertips__more__grid__body__item .fingertips__more__grid__body__item__link .fingertips__more__grid__body__item__link__picture .fingertips__more__grid__body__item__link__picture-img:hover {
+  transform: scale(1.1);
+}
+.fingertips__more .fingertips__more__grid .fingertips__more__grid__body .fingertips__more__grid__body__item .fingertips__more__grid__body__item__link .fingertips__more__grid__body__item__link__title {
+  margin-top: -9rem;
+  padding: 2rem 0;
+  position: relative;
+  z-index: 10;
+}
+.fingertips__more .fingertips__more__grid .fingertips__more__grid__body .fingertips__more__grid__body__item .fingertips__more__grid__body__item__link .fingertips__more__grid__body__item__link__title .fingertips__more__grid__body__item__link__title-text {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.fingertips__more .fingertips__more__grid .fingertips__more__grid__body .fingertips__more__grid__body__item .fingertips__more__grid__body__item__link .fingertips__more__grid__body__item__link__title .fingertips__more__grid__body__item__link__title-text span {
+  background: linear-gradient(90deg, #3D47FC 0%, #9936FC 56.5%, #B228FC 100%);
+  background-clip: border-box;
+  background-clip: border-box;
+  font-weight: 700;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+}
+
+.skills__file {
+  padding: 7rem 0;
+}
+.skills__file .skills__file__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.skills__file .skills__file__grid .skills__file__grid__header {
+  text-align: center;
+}
+.skills__file .skills__file__grid .skills__file__grid__header .skills__file__grid__header-title {
+  font-size: 5rem;
+}
+.skills__file .skills__file__grid .skills__file__grid__body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: stretch;
+  margin-top: 3rem;
+  gap: 3rem;
+}
+.skills__file .skills__file__grid .skills__file__grid__body .skills__file__grid__body__item {
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  border-radius: 1.6rem;
+  padding: 4rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.skills__file .skills__file__grid .skills__file__grid__body .skills__file__grid__body__item .skills__file__grid__body__item__picture {
+  margin-bottom: 2rem;
+}
+.skills__file .skills__file__grid .skills__file__grid__body .skills__file__grid__body__item .skills__file__grid__body__item__picture .skills__file__grid__body__item__picture-img {
+  width: 8rem;
+  margin: 0 auto;
+}
+.skills__file .skills__file__grid .skills__file__grid__body .skills__file__grid__body__item .skills__file__grid__body__item__text {
+  text-align: center;
+}
+.skills__file .skills__file__grid .skills__file__grid__body .skills__file__grid__body__item .skills__file__grid__body__item__text .skills__file__grid__body__item__text-title {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+.skills__file .skills__file__grid .skills__file__grid__body .skills__file__grid__body__item .skills__file__grid__body__item__text .skills__file__grid__body__item__text-description {
+  font-size: 1.5rem;
+}
+
+.banner__tools {
+  padding: 2rem 0;
+  padding-bottom: 4rem;
+}
+.banner__tools .banner__tools__grid {
+  background: linear-gradient(90deg, #D5E9FF 0%, #EEF3FF 100.06%), #FFFFFF;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  border-radius: 2.4rem;
+  padding: 4rem 6rem;
+  align-items: center;
+  gap: 0rem;
+}
+.banner__tools .banner__tools__grid .banner__tools__grid__left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.banner__tools .banner__tools__grid .banner__tools__grid__left .banner__tools__grid__left__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+}
+.banner__tools .banner__tools__grid .banner__tools__grid__left .banner__tools__grid__left__logo .banner__tools__grid__left__logo__picture .banner__tools__grid__left__logo__picture-img {
+  height: 5rem;
+  width: 5rem;
+  display: block;
+  border-radius: 0.5rem;
+  transition: all 0.5s ease;
+}
+.banner__tools .banner__tools__grid .banner__tools__grid__left .banner__tools__grid__left__logo .banner__tools__grid__left__logo-title {
+  font-size: 3rem;
+}
+.banner__tools .banner__tools__grid .banner__tools__grid__left .banner__tools__grid__left__logo .banner__tools__grid__left__logo-title span {
+  color: #4D64FD;
+}
+.banner__tools .banner__tools__grid .banner__tools__grid__left .banner__tools__grid__left__desciption {
+  padding-right: 6rem;
+}
+.banner__tools .banner__tools__grid .banner__tools__grid__left .banner__tools__grid__left__desciption .banner__tools__grid__left__desciption-text {
+  font-weight: 500;
+  font-size: 2rem;
+}
+.banner__tools .banner__tools__grid .banner__tools__grid__left .banner__tools__grid__left__desciption .banner__tools__grid__left__desciption__list {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+.banner__tools .banner__tools__grid .banner__tools__grid__left .banner__tools__grid__left__desciption .banner__tools__grid__left__desciption__list .banner__tools__grid__left__desciption__list-button:first-of-type {
+  padding: 1.5rem 3rem;
+  border: 2px solid #4D64FD;
+  background-color: #4D64FD;
+  color: #FFFFFF;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.banner__tools .banner__tools__grid .banner__tools__grid__left .banner__tools__grid__left__desciption .banner__tools__grid__left__desciption__list .banner__tools__grid__left__desciption__list-button:last-of-type {
+  padding: 1.5rem 3rem;
+  border: 2px solid #4D64FD;
+  background-color: transparent;
+  color: #4D64FD;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.banner__tools .banner__tools__grid .banner__tools__grid__left .banner__tools__grid__left__desciption .banner__tools__grid__left__desciption__list .banner__tools__grid__left__desciption__list-button:last-of-type:hover {
+  background-color: #4D64FD;
+  color: #FFFFFF;
+}
+
+.rating__tools {
+  padding-bottom: 4rem;
+}
+.rating__tools .rating__tools__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.rating__tools .rating__tools__grid .rating__tools__grid__star {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+.rating__tools .rating__tools__grid .rating__tools__grid__star .rating__tools__grid__star-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.rating__tools .rating__tools__grid .rating__tools__grid__star .rating__tools__grid__star__picture {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 2.3rem;
+  background: #F4F4F4;
+  border-radius: 5.9rem;
+}
+.rating__tools .rating__tools__grid .rating__tools__grid__star .rating__tools__grid__star__picture .rating__tools__grid__star__picture-img {
+  width: 19.2rem;
+  height: 3.2rem;
+  margin-right: 1rem;
+}
+.rating__tools .rating__tools__grid .rating__tools__grid__star .rating__tools__grid__star__picture .rating__tools__grid__star__picture-number {
+  color: #474747;
+}
+.rating__tools .rating__tools__grid .rating__tools__grid__star .rating__tools__grid__star__picture .rating__tools__grid__star__picture-votes {
+  font-size: 1.6rem;
+  color: #474747;
+}
+.rating__tools .rating__tools__grid .rating__tools__grid__description {
+  text-align: center;
+  margin-top: 0rem;
+}
+.rating__tools .rating__tools__grid .rating__tools__grid__description .rating__tools__grid__description-text {
+  font-size: 1.6rem;
+  color: #474747;
+}
+.rating__tools .rating__tools__grid .rating__tools__grid__counter {
+  text-align: center;
+}
+.rating__tools .rating__tools__grid .rating__tools__grid__counter .rating__tools__grid__counter-text {
+  font-size: 1.6rem;
+  color: #474747;
+}
+.rating__tools .rating__tools__grid .rating__tools__grid__counter .rating__tools__grid__counter-text span {
+  font-weight: 700;
+  color: #E86136;
+}
+
+.skills__more {
+  background-color: #FFFFFF;
+  padding: 1rem;
+  padding-bottom: 5rem;
+}
+.skills__more .skills__more__grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.skills__more .skills__more__grid .skills__more__grid-flex .skills__more__grid__item {
+  position: relative;
+}
+.skills__more .skills__more__grid .skills__more__grid-flex .skills__more__grid__item .skills__more__grid__item__picture {
+  display: block;
+  border-radius: 2rem;
+  max-height: 27rem;
+  min-height: 27rem;
+  overflow: hidden;
+}
+.skills__more .skills__more__grid .skills__more__grid-flex .skills__more__grid__item .skills__more__grid__item__picture .skills__more__grid__item__picture-img {
+  border-radius: 2rem;
+  object-fit: cover;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+.skills__more .skills__more__grid .skills__more__grid-flex .skills__more__grid__item .skills__more__grid__item__picture .skills__more__grid__item__picture-img:hover {
+  transform: scale(1.1) rotate(-2deg);
+}
+.skills__more .skills__more__grid .skills__more__grid-flex .skills__more__grid__item .skills__more__grid__item__picture .skills__more__grid__item__text {
+  position: absolute;
+  top: 0;
+  padding: 2.5rem 0 0 2.5rem;
+}
+.skills__more .skills__more__grid .skills__more__grid-flex .skills__more__grid__item .skills__more__grid__item__picture .skills__more__grid__item__text .skills__more__grid__item__text-title {
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.skills__more .skills__more__grid .skills__more__grid-flex .skills__more__grid__item .skills__more__grid__item__picture .skills__more__grid__item__text .skills__more__grid__item__text-description {
+  margin-top: 1rem;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+}
+.skills__more .skills__more__grid .skills__more__grid-flex:nth-child(1) {
+  display: flex;
+  width: 100%;
+  gap: 3rem;
+}
+.skills__more .skills__more__grid .skills__more__grid-flex:nth-child(1) .skills__more__grid__item:nth-child(1) {
+  flex: 1.4;
+}
+.skills__more .skills__more__grid .skills__more__grid-flex:nth-child(1) .skills__more__grid__item:nth-child(2) {
+  flex: 2;
+}
+.skills__more .skills__more__grid .skills__more__grid-flex:nth-child(2) {
+  display: flex;
+  width: 100%;
+  gap: 3rem;
+}
+.skills__more .skills__more__grid .skills__more__grid-flex:nth-child(2) .skills__more__grid__item:nth-child(1) {
+  flex: 2;
+}
+.skills__more .skills__more__grid .skills__more__grid-flex:nth-child(2) .skills__more__grid__item:nth-child(2) {
+  flex: 1.4;
+}
+
+.popular__tools-alternative {
+  background-color: transparent;
+  box-shadow: none;
+  margin: 0;
+  margin-top: 6.5rem;
+}
+.popular__tools-alternative .popular__tools__grid {
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  border-radius: 2rem;
+  padding: 5rem 0;
+  padding-top: 2.5rem;
+}
+.popular__tools-alternative .popular__tools__grid .popular__tools__grid__header .popular__tools__grid__header__title {
+  margin-left: 3rem;
+}
+.popular__tools-alternative .popular__tools__grid .popular__tools__grid__header .popular__tools__grid__header__title .popular__tools__grid__header__title-text {
+  font-size: 2.5rem;
+  color: #474747;
+}
+.popular__tools-alternative .popular__tools__grid .popular__tools__grid__header .popular__tools__grid__header__explore {
+  margin-right: 3rem;
+}
+
+.popular__tools-alternative-margin {
+  margin-top: -3rem;
+}
+
+.router__converter {
+  padding-top: 10rem;
+}
+.router__converter .router__converter__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.router__converter .router__converter__grid .router__converter__grid__links .router__converter__grid__links__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+.router__converter .router__converter__grid .router__converter__grid__links .router__converter__grid__links__list .router__converter__grid__links__list__item .router__converter__grid__links__list__item-link:hover {
+  text-decoration: underline;
+  color: #4D64FD;
+}
+.router__converter .router__converter__grid .router__converter__grid__links .router__converter__grid__links__list .router__converter__grid__links__list__item .router__converter__grid__links__list__item-link:hover .bi {
+  color: #0D1117;
+}
+.router__converter .router__converter__grid .router__converter__grid__links .router__converter__grid__links__list .router__converter__grid__links__list__item .router__converter__grid__links__list__item-link .bi {
+  margin-right: 1rem;
+}
+.router__converter .router__converter__grid .router__converter__grid__title {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.router__converter .router__converter__grid .router__converter__grid__title .router__converter__grid__title__picture {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.router__converter .router__converter__grid .router__converter__grid__title .router__converter__grid__title__picture .router__converter__grid__title__picture-img {
+  max-width: 5rem;
+  min-width: 5rem;
+  max-height: 5rem;
+  min-height: 5rem;
+  object-fit: cover;
+}
+.router__converter .router__converter__grid .router__converter__grid__title .router__converter__grid__title__picture .router__converter__grid__title__picture-text {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 0.4rem;
+}
+.router__converter .router__converter__grid .router__converter__grid__title .router__converter__grid__title-description {
+  font-size: 1.4rem;
+  text-align: center;
+  color: #474747;
+}
+
+.upload__converter {
+  margin-top: 3rem;
+  margin-bottom: -4rem;
+}
+.upload__converter .upload__converter__grid {
+  background: #FFFFFF;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 360px;
+  border: 2px dashed #cfcfcf;
+  transition: all 0.2s ease;
+}
+.upload__converter .upload__converter__grid .upload__converter__grid__file {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+.upload__converter .upload__converter__grid .upload__converter__grid__file .upload__converter__grid__file__picture .upload__converter__grid__file__picture-img {
+  max-width: 12.8rem;
+  min-width: 12.8rem;
+  margin: 0 auto;
+}
+.upload__converter .upload__converter__grid .upload__converter__grid__file .upload__converter__grid__file__button .upload__converter__grid__file__button-click {
+  width: 289px;
+  height: 52px;
+  background: #4D64FD;
+  border-radius: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 1.6rem;
+  border: none;
+  position: relative;
+  z-index: 3;
+  cursor: pointer;
+}
+.upload__converter .upload__converter__grid .upload__converter__grid__file .upload__converter__grid__file__button .upload__converter__grid__file__button-text {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 0;
+}
+
+.dropzone.dragover {
+  background-color: #f0f0f0; /* Cambia el fondo cuando se está arrastrando un archivo sobre él */
+  border: 2px dashed #4D64FD;
+  transition: all 0.2s ease;
+}
+
+.login__principal {
+  background-size: cover;
+  width: 100%;
+  min-height: 100%;
+  padding-top: 7rem;
+}
+.login__principal::after {
+  content: "";
+  display: block;
+  top: -500px;
+  width: 100%;
+  z-index: -1;
+  background-image: url(../img/banner-bg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+  filter: blur(25px);
+}
+.login__principal .login__principal__grid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 11rem;
+  padding: 6rem 4rem;
+  position: relative;
+}
+.login__principal .login__principal__grid .login__principal__grid__picture .login__principal__grid__picture-img {
+  max-width: 50rem;
+  min-width: 50rem;
+  transition: all 0.3s ease;
+}
+.login__principal .login__principal__grid .login__principal__grid__picture .login__principal__grid__picture-img:hover {
+  transform: scale(0.8);
+}
+.login__principal .login__principal__grid .login__principal__grid__form {
+  background-color: #FFFFFF;
+  padding: 3rem 4rem;
+  max-width: 38rem;
+  min-width: 38rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  max-height: 59rem;
+  min-height: 59rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__header .login__principal__grid__form__header-title {
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__header .login__principal__grid__form__header__options .login__principal__grid__form__header__options-title {
+  color: #979797;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__header .login__principal__grid__form__header__options .login__principal__grid__form__header__options__list {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__header .login__principal__grid__form__header__or {
+  margin: 0;
+  padding: 0;
+  padding: 1rem 0;
+  padding-top: 0.5rem;
+  position: relative;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__header .login__principal__grid__form__header__or .login__principal__grid__form__header__or-text {
+  position: relative;
+  text-align: center;
+  color: #979797;
+  font-size: 1.2rem;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__header .login__principal__grid__form__header__or .login__principal__grid__form__header__or-text::before {
+  content: "";
+  position: absolute;
+  width: 135px;
+  height: 0.5px;
+  background-color: rgba(0, 0, 0, 0.12);
+  top: 9.5px;
+  left: 0;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__header .login__principal__grid__form__header__or .login__principal__grid__form__header__or-text::after {
+  content: "";
+  position: absolute;
+  width: 135px;
+  height: 0.5px;
+  background-color: rgba(0, 0, 0, 0.12);
+  top: 9.5px;
+  left: auto;
+  right: 0;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(1),
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(2) {
+  padding: 0.8rem 0rem;
+  padding-right: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(1) input[type=email],
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(2) input[type=email] {
+  font-size: 1.4rem;
+  width: 100%;
+  border: none;
+  color: #5a5a5a;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(1) input[type=email]::placeholder,
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(2) input[type=email]::placeholder {
+  font-size: 13.3px;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(1) input[type=email]:focus,
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(2) input[type=email]:focus {
+  outline: none;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(1) input[type=password],
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(2) input[type=password] {
+  font-size: 1.4rem;
+  width: 100%;
+  border: none;
+  color: #5a5a5a;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(1) input[type=password]::placeholder,
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(2) input[type=password]::placeholder {
+  font-size: 13.3px;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(1) input[type=password]:focus,
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(2) input[type=password]:focus {
+  outline: none;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(1) .bi,
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(2) .bi {
+  color: #979797;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(1) {
+  padding-top: 2rem;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(2) {
+  padding-top: 2rem;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 0.7rem;
+  margin-top: 0.5rem;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(3) .login__principal__grid__form__body__content-text {
+  color: #757575;
+  font-size: 1.3rem;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(3) input[type=checkbox] {
+  border: 1px solid #979797;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(4) {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__body .login__principal__grid__form__body__content:nth-child(4) input[type=submit] {
+  display: block;
+  width: 100%;
+  background-color: #4D64FD;
+  color: #FFFFFF;
+  border: 0;
+  padding: 1.2rem 1.6rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__footer .login__principal__grid__form__footer-text {
+  font-size: 1.3rem;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__footer .login__principal__grid__form__footer-text a {
+  color: #4D64FD;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__footer .login__principal__grid__form__footer-text a:hover {
+  text-decoration: underline;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__footer .login__principal__grid__form__footer-link {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  color: #4D64FD;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__footer .login__principal__grid__form__footer-link:hover {
+  text-decoration: underline;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__footer__terms {
+  margin-top: 3rem;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__footer__terms .login__principal__grid__form__footer__terms-text {
+  font-size: 1rem;
+  color: #9c9c9c;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__footer__terms .login__principal__grid__form__footer__terms-text a {
+  color: #4D64FD;
+}
+.login__principal .login__principal__grid .login__principal__grid__form .login__principal__grid__form__footer__terms .login__principal__grid__form__footer__terms-text a:hover {
+  text-decoration: underline;
+}
+
+.download__file {
+  position: relative;
+  max-height: 55rem;
+  min-height: 55rem;
+  padding-top: 11rem;
+  overflow: hidden;
+  margin-bottom: -19rem;
+}
+.download__file::after {
+  content: "";
+  display: block;
+  top: 0px;
+  width: 100%;
+  z-index: -1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25rem;
+  position: absolute;
+  background: linear-gradient(rgba(76, 126, 255, 0.05), rgb(241, 241, 241));
+  filter: blur(25px);
+}
+.download__file .download__file__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  border-radius: 1.6rem;
+  padding: 4rem 5rem;
+}
+.download__file .download__file__grid .download__file__grid__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  padding-top: 3rem;
+}
+.download__file .download__file__grid .download__file__grid__header .download__file__grid__header__picture .download__file__grid__header__picture-img {
+  max-width: 7rem;
+  min-width: 7rem;
+  transition: all 0.3s ease;
+}
+.download__file .download__file__grid .download__file__grid__header .download__file__grid__header__picture .download__file__grid__header__picture-img:hover {
+  transform: scale(0.8);
+}
+.download__file .download__file__grid .download__file__grid__header .download__file__grid__header-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.download__file .download__file__grid .download__file__grid__header .download__file__grid__header-title span {
+  color: #4D64FD;
+  font-weight: 700;
+}
+.download__file .download__file__grid .download__file__grid__body {
+  margin-top: 1rem;
+}
+.download__file .download__file__grid .download__file__grid__body .download__file__grid__body__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.download__file .download__file__grid .download__file__grid__body .download__file__grid__body__list .download__file__grid__body__list__item:nth-child(1) .download__file__grid__body__list__item-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  height: 5rem;
+  width: 5rem;
+  background-color: #FFFFFF;
+  border: 1px solid #C7CAFB;
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+}
+.download__file .download__file__grid .download__file__grid__body .download__file__grid__body__list .download__file__grid__body__list__item:nth-child(1) .download__file__grid__body__list__item-button svg {
+  margin-left: -0.2rem;
+}
+.download__file .download__file__grid .download__file__grid__body .download__file__grid__body__list .download__file__grid__body__list__item:nth-child(2) .download__file__grid__body__list__item-button {
+  max-width: 100%;
+  width: 28.9rem;
+  height: 5rem;
+  background: #4D64FD;
+  border-radius: 0.4rem;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  transition: all 0.2s ease;
+}
+.download__file .download__file__grid .download__file__grid__body .download__file__grid__body__list .download__file__grid__body__list__item:nth-child(2) .download__file__grid__body__list__item-button p {
+  color: #FFFFFF;
+}
+.download__file .download__file__grid .download__file__grid__body .download__file__grid__body__list .download__file__grid__body__list__item:nth-child(2) .download__file__grid__body__list__item-button:hover {
+  background-color: #354eca;
+}
+.download__file .download__file__grid .download__file__grid__body .download__file__grid__body__list .download__file__grid__body__list__item:nth-child(3) .download__file__grid__body__list__item-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  height: 5rem;
+  width: 5rem;
+  background-color: #FFFFFF;
+  border: 1px solid #4D64FD;
+  text-align: center;
+  padding: 1rem;
+  background: #4D64FD;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.download__file .download__file__grid .download__file__grid__body .download__file__grid__body__list .download__file__grid__body__list__item:nth-child(3) .download__file__grid__body__list__item-button:hover {
+  background-color: #354eca;
+}
+.download__file .download__file__grid .download__file__grid__body .download__file__grid__body__list .download__file__grid__body__list__item:nth-child(4) .download__file__grid__body__list__item-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  height: 5rem;
+  width: 5rem;
+  background-color: #FFFFFF;
+  border: 1px solid #C7CAFB;
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+}
