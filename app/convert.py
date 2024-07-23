@@ -64,3 +64,13 @@ def compress_to_pdf(pdf_converter, name):
     pdf_document.close()
 
     return pdf_file 
+
+from PIL import Image
+def compress_to_image(input_image_path, name, format):
+    pdf_folder = os.path.join(settings.BASE_DIR, f'documents/{format}')
+    pdf_file = os.path.join(pdf_folder, f'{name}.{format}')
+    try:
+        with Image.open(input_image_path) as img:
+            img.save(pdf_file, quality=35, optimize=True)
+    except Exception as e:
+        print(f"Error: {e}")

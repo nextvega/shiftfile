@@ -10,7 +10,7 @@ urlpatterns =[
     path('all-tools/converter_txt/', views.converter_txt, name="converter_txt"),
     path('all-tools/converter_jpg/', views.converter_jpg, name="converter_jpg"),
     path('all-tools/compress/', views.compress, name="compress"),
-
+    path('all-tools/compress_img/', views.compress_img, name="compress_img"),
 
     # files management
     path('all-tools/download/', views.download, name="download"),

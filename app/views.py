@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.http import JsonResponse
 from django.urls import reverse
 from django.conf import settings
-from .convert import convertPDF_to_word, convertTXT_to_pdf, converterJPG_to_PDF, compress_to_pdf
+from .convert import convertPDF_to_word, convertTXT_to_pdf, converterJPG_to_PDF, compress_to_pdf, compress_to_image
 from django.utils import timezone
 
 # imports generales
@@ -203,7 +203,50 @@ def compress(request):
         'title': 'File Compress'
     })
 
+def compress_img(request):
+    if request.method == 'POST' and request.FILES.get('fileInput'):
+        uploaded_file = request.FILES['fileInput']
+        documents_folder = os.path.join(settings.BASE_DIR, 'documents')
+        token = uuid.uuid4().hex
 
+        print(uploaded_file.content_type.split('/')[1])
+
+        if uploaded_file.content_type == 'image/jpeg' or uploaded_file.content_type == 'image/png':
+
+            if not os.path.exists(documents_folder):
+                os.makedirs(documents_folder)
+
+            file_path = os.path.join(documents_folder, token + f'.{uploaded_file.content_type.split('/')[1]}')
+
+            with open(file_path, 'wb') as destination:
+                for chunk in uploaded_file.chunks():
+                    destination.write(chunk)
+            
+            word_file_path = compress_to_image(file_path, token, f'{uploaded_file.content_type.split('/')[1]}')
+            request.session['token'] = token
+            request.session['format'] = f'.{uploaded_file.content_type.split('/')[1]}'
+            request.session['name_file'] = uploaded_file.name
+
+            if 'tokens' not in request.session:
+                request.session['tokens'] = []
+            else:
+                tokens = request.session['tokens']
+
+                if token not in tokens:
+                    tokens.append(token)
+                    request.session['tokens'] = tokens
+            return JsonResponse(
+                {
+                    'redirect_url': reverse('download', kwargs={'token': token, 'format': f'.{uploaded_file.content_type.split('/')[1]}'}),
+                }
+            )
+            
+        else:
+            return JsonResponse({'error': 'El archivo no es un IMG'}, status=404)
+        
+    return render(request, 'pages/services/tools/compress_image.html',{
+        'title': 'File Compress IMG'
+    })
 
 
 # Acciones en el servidor

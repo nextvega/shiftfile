@@ -21,19 +21,19 @@
                         </li>
 
                         <li class="router__converter__grid__links__list__item">
-                            <a class="router__converter__grid__links__list__item-link" href="{% url "converter" %}">PDF to word <i class="bi bi-chevron-compact-right"></i></a>
+                            <a class="router__converter__grid__links__list__item-link" href="{% url "compress_img" %}">Compress Image <i class="bi bi-chevron-compact-right"></i></a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="router__converter__grid__title">
                     <picture class="router__converter__grid__title__picture">
-                        <img class="router__converter__grid__title__picture-img" src="{% static 'build/img/word.svg'%}" alt="pdf converter">
-                        <h1 class="router__converter__grid__title__picture-text">PDF to Word</h1>
+                        <img class="router__converter__grid__title__picture-img" src="{% static 'build/img/compress2.svg'%}" alt="pdf converter">
+                        <h1 class="router__converter__grid__title__picture-text"> Compress Image</h1>
                     </picture>
 
                     <p class="router__converter__grid__title-description">
-                        Easily convert PDF to Word online.
+                        Free and online photo compressor.
                     </p>
                 </div>
             </main>
@@ -52,7 +52,7 @@
                         <button class="upload__converter__grid__file__button-click">
                             Choose File
                         </button>
-                        <form id="uploadForm" action="{ url 'converter'}" method="post" enctype="multipart/form-data">
+                        <form id="uploadForm" action="{ url 'converter_txt'}" method="post" enctype="multipart/form-data">
                             {% csrf_token %}
                             <input type="file" id="fileInput" name="fileInput" value="">
                             <input readonly type="text" id="formatInput" name="formatInput" value=".docx">
@@ -179,7 +179,7 @@
 {% block scripts %}
 
     <script>
-        var router = "{% url 'converter' %}"
+        var router = "{% url 'compress_img' %}"
     </script>
     <script src="{% static 'build/js/upload.js'%}"></script>
 
